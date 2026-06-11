@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>GearO - Office equipment eCommerce HTML Template</title>
+    <title>Caspian - Office equipment eCommerce HTML Template</title>
 
     <meta name="author" content="themesflat.com">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -123,6 +123,7 @@
                                     <li class="menu-item">
                                         <a href="#contact" class="item-link">Contact</a>
                                     </li>
+                                </ul>
                             </nav>
                         </div>
                         <div class="col-md-4 col-2 d-xl-none">
@@ -144,7 +145,7 @@
                         <div class="col-xl-5 col-md-4 col-2 d-flex justify-content-end align-items-center">
                             <button id="navEnquiryBtn" class="nav-enquiry-btn" onclick="document.getElementById('enquiryModal').classList.add('active')">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
-                                Get a Quote
+                                <span>Get a Quote</span>
                             </button>
                         </div>
                     </div>
@@ -166,25 +167,24 @@
                                     <div class="footer-menu">
                                         <div class="footer-col-block">
                                             <h5 class="footer-heading text_white footer-heading-mobile">
-                                                Infomation
+                                                Quick Links
                                             </h5>
                                             <div class="tf-collapse-content">
                                                 <ul class="footer-menu-list">
                                                     <li class="text-body-default">
-                                                        <a href="about.html" class="link footer-menu_item">About
-                                                            Us</a>
+                                                        <a href="#wrapper" class="link footer-menu_item">Home</a>
                                                     </li>
                                                     <li class="text-body-default">
-                                                        <a href="store-list.html" class="link footer-menu_item">Our
-                                                            Stories</a>
+                                                        <a href="#about" class="link footer-menu_item">About</a>
                                                     </li>
                                                     <li class="text-body-default">
-                                                        <a href="#" class="link footer-menu_item">Size
-                                                            Guide</a>
+                                                        <a href="#collections" class="link footer-menu_item">Collections</a>
                                                     </li>
                                                     <li class="text-body-default">
-                                                        <a href="contact.html" class="link footer-menu_item">Contact
-                                                            us</a>
+                                                        <a href="#products" class="link footer-menu_item">Products</a>
+                                                    </li>
+                                                    <li class="text-body-default">
+                                                        <a href="#contact" class="link footer-menu_item">Contact</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -269,7 +269,7 @@
                         <div class="col-12">
                             <div class="footer-bottom-wrap">
                                 <div class="left">
-                                    <p class="text-body-default text_white">Copyright ©2025 GearO. All Rights
+                                    <p class="text-body-default text_white">Copyright ©2025 Caspian. All Rights
                                         Reserved.
                                     </p>
                                 </div>
@@ -318,55 +318,7 @@
         </footer>
         <!-- /.footer -->
 
-        <!-- toolbar-bottom -->
-        <div class="tf-toolbar-bottom">
-            <div class="toolbar-item">
-                <a href="shop-default.html">
-                    <div class="toolbar-icon">
-                        <span class="icon icon-squaresfour"></span>
-                    </div>
-                    <div class="toolbar-label">Shop</div>
-                </a>
-            </div>
-            <div class="toolbar-item">
-                <a href="#shopCategories" data-bs-toggle="offcanvas" aria-controls="shopCategories">
-                    <div class="toolbar-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000"
-                            viewBox="0 0 256 256">
-                            <path
-                                d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z">
-                            </path>
-                        </svg>
-                    </div>
-                    <div class="toolbar-label">Categories</div>
-                </a>
-            </div>
-            <div class="toolbar-item">
-                <a href="#search" data-bs-toggle="modal">
-                    <div class="toolbar-icon">
-                        <span class="icon icon-search"></span>
-                    </div>
-                    <div class="toolbar-label">Search</div>
-                </a>
-            </div>
-            <div class="toolbar-item">
-                <a href="wish-list.html">
-                    <div class="toolbar-icon">
-                        <span class="icon icon-heart"></span>
-                    </div>
-                    <div class="toolbar-label">Wishlist</div>
-                </a>
-            </div>
-            <div class="toolbar-item">
-                <a href="#shoppingCart" data-bs-toggle="modal">
-                    <div class="toolbar-icon">
-                        <span class="icon icon-cart"></span>
-                    </div>
-                    <div class="toolbar-label">Cart</div>
-                </a>
-            </div>
-        </div>
-        <!-- /toolbar-bottom -->
+
 
     </div><!-- /wrapper -->
 
@@ -376,269 +328,30 @@
         <div class="mb-canvas-content">
             <div class="mb-body">
                 <ul class="nav-ul-mb" id="wrapper-menu-navigation">
-                    <li class="nav-mb-item active">
-                        <a href="#dropdown-menu-one" class="collapsed mb-menu-link" data-bs-toggle="collapse"
-                            aria-expanded="true" aria-controls="dropdown-menu-one">
+                    <li class="nav-mb-item">
+                        <a href="#wrapper" class="mb-menu-link" data-bs-dismiss="offcanvas">
                             <span>Home</span>
-                            <span class="btn-open-sub"></span>
                         </a>
-                        <div id="dropdown-menu-one" class="collapse">
-                            <ul class="sub-nav-menu">
-                                <li><a href="index.html" class="sub-nav-link active">Homepage 01</a></li>
-                                <li><a href="home-2.html" class="sub-nav-link">Homepage 02</a></li>
-                                <li><a href="home-3.html" class="sub-nav-link">Homepage 03</a></li>
-                                <li><a href="home-4.html" class="sub-nav-link">Homepage 04</a></li>
-                                <li><a href="home-5.html" class="sub-nav-link">Homepage 05</a></li>
-                            </ul>
-                        </div>
                     </li>
                     <li class="nav-mb-item">
-                        <a href="#dropdown-menu-two" class="collapsed mb-menu-link" data-bs-toggle="collapse"
-                            aria-expanded="true" aria-controls="dropdown-menu-two">
-                            <span>Shop</span>
-                            <span class="btn-open-sub"></span>
+                        <a href="#about" class="mb-menu-link" data-bs-dismiss="offcanvas">
+                            <span>About</span>
                         </a>
-                        <div id="dropdown-menu-two" class="collapse">
-                            <ul class="sub-nav-menu">
-                                <li>
-                                    <a href="#sub-shop-one" class="sub-nav-link collapsed"
-                                        data-bs-toggle="collapse" aria-expanded="true"
-                                        aria-controls="sub-shop-one">
-                                        <span>Shop Layout</span>
-                                        <span class="btn-open-sub"></span>
-                                    </a>
-                                    <div id="sub-shop-one" class="collapse">
-                                        <ul class="sub-nav-menu sub-menu-level-2">
-                                            <li><a href="shop-default.html" class="sub-nav-link">Shop Default</a>
-                                            </li>
-                                            <li><a href="shop-list.html" class="sub-nav-link">Shop List</a></li>
-                                            <li><a href="shop-full-grid.html" class="sub-nav-link">Shop Full
-                                                    Grid</a>
-                                            </li>
-                                            <li><a href="shop-full-list.html" class="sub-nav-link">Shop Full
-                                                    List</a>
-                                            </li>
-                                            <li><a href="shop-sidebar-left.html" class="sub-nav-link">Shop Sidebar
-                                                    Left</a></li>
-                                            <li><a href="shop-sidebar-right.html" class="sub-nav-link">Shop Sidebar
-                                                    Right</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#sub-shop-two" class="sub-nav-link collapsed"
-                                        data-bs-toggle="collapse" aria-expanded="true"
-                                        aria-controls="sub-shop-two">
-                                        <span>Shop Filter</span>
-                                        <span class="btn-open-sub"></span>
-                                    </a>
-                                    <div id="sub-shop-two" class="collapse">
-                                        <ul class="sub-nav-menu sub-menu-level-2">
-                                            <li><a href="shop-filter-canvas.html" class="sub-nav-link">Filter
-                                                    Canvas</a>
-                                            </li>
-                                            <li><a href="shop-filter-dropdown.html" class="sub-nav-link">Filter
-                                                    Dropdown</a></li>
-                                            <li><a href="shop-filter-sidebar.html" class="sub-nav-link">Filter
-                                                    Sidebar</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#sub-shop-three" class="sub-nav-link collapsed"
-                                        data-bs-toggle="collapse" aria-expanded="true"
-                                        aria-controls="sub-shop-three">
-                                        <span>Shop Pagination</span>
-                                        <span class="btn-open-sub"></span>
-                                    </a>
-                                    <div id="sub-shop-three" class="collapse">
-                                        <ul class="sub-nav-menu sub-menu-level-2">
-                                            <li><a href="shop-pagination.html" class="sub-nav-link">Pagination</a>
-                                            </li>
-                                            <li><a href="shop-load-button.html" class="sub-nav-link">Load Button</a>
-                                            </li>
-                                            <li><a href="shop-infinite-scrolling.html" class="sub-nav-link">Infinite
-                                                    Scrolling</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#sub-shop-four" class="sub-nav-link collapsed"
-                                        data-bs-toggle="collapse" aria-expanded="true"
-                                        aria-controls="sub-shop-four">
-                                        <span>Product Style</span>
-                                        <span class="btn-open-sub"></span>
-                                    </a>
-                                    <div id="sub-shop-four" class="collapse">
-                                        <ul class="sub-nav-menu sub-menu-level-2">
-                                            <li><a href="product-style-01.html" class="sub-nav-link">Product Style
-                                                    1</a>
-                                            </li>
-                                            <li><a href="product-style-02.html" class="sub-nav-link">Product Style
-                                                    2</a>
-                                            </li>
-                                            <li><a href="product-style-03.html" class="sub-nav-link">Product Style
-                                                    3</a>
-                                            </li>
-                                            <li><a href="product-style-04.html" class="sub-nav-link">Product Style
-                                                    4</a>
-                                            </li>
-                                            <li><a href="product-style-05.html" class="sub-nav-link">Product Style
-                                                    5</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#sub-shop-five" class="sub-nav-link collapsed"
-                                        data-bs-toggle="collapse" aria-expanded="true"
-                                        aria-controls="sub-shop-five">
-                                        <span>My Pages</span>
-                                        <span class="btn-open-sub"></span>
-                                    </a>
-                                    <div id="sub-shop-five" class="collapse">
-                                        <ul class="sub-nav-menu sub-menu-level-2">
-                                            <li><a href="shopping-cart.html" class="sub-nav-link">Shopping Cart</a>
-                                            </li>
-                                            <li><a href="checkout.html" class="sub-nav-link">Check Out</a></li>
-                                            <li><a href="order.html" class="sub-nav-link">Order Tracking</a></li>
-                                            <li><a href="login.html" class="sub-nav-link">Login/Register</a></li>
-                                            <li><a href="wish-list.html" class="sub-nav-link">Wish List</a></li>
-                                            <li><a href="search-result.html" class="sub-nav-link">Search</a></li>
-                                            <li><a href="my-account.html" class="sub-nav-link">My Account</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
                     </li>
                     <li class="nav-mb-item">
-                        <a href="#dropdown-menu-three" class="collapsed mb-menu-link" data-bs-toggle="collapse"
-                            aria-expanded="true" aria-controls="dropdown-menu-three">
+                        <a href="#collections" class="mb-menu-link" data-bs-dismiss="offcanvas">
+                            <span>Collections</span>
+                        </a>
+                    </li>
+                    <li class="nav-mb-item">
+                        <a href="#products" class="mb-menu-link" data-bs-dismiss="offcanvas">
                             <span>Products</span>
-                            <span class="btn-open-sub"></span>
                         </a>
-                        <div id="dropdown-menu-three" class="collapse">
-                            <ul class="sub-nav-menu">
-                                <li>
-                                    <a href="#sub-products-one" class="sub-nav-link collapsed"
-                                        data-bs-toggle="collapse" aria-expanded="true"
-                                        aria-controls="sub-products-one">
-                                        <span>Products Layout</span>
-                                        <span class="btn-open-sub"></span>
-                                    </a>
-                                    <div id="sub-products-one" class="collapse">
-                                        <ul class="sub-nav-menu sub-menu-level-2">
-                                            <li><a href="product-detail.html" class="sub-nav-link">Product
-                                                    Detail</a>
-                                            </li>
-                                            <li><a href="product-thumbnails-right.html" class="sub-nav-link">Product
-                                                    Thumbnails Right</a></li>
-                                            <li><a href="product-thumbnails-bottom.html"
-                                                    class="sub-nav-link">Product
-                                                    Thumbnails Bottom</a></li>
-                                            <li><a href="product-grid-1.html" class="sub-nav-link">Product Grid
-                                                    1</a>
-                                            </li>
-                                            <li><a href="product-grid-2.html" class="sub-nav-link">Product Grid
-                                                    2</a>
-                                            </li>
-                                            <li><a href="product-stacked.html" class="sub-nav-link">Product
-                                                    Stacked</a>
-                                            </li>
-                                            <li><a href="product-description-accordion.html"
-                                                    class="sub-nav-link">Product Description Accordion</a></li>
-                                            <li><a href="product-description-list.html" class="sub-nav-link">Product
-                                                    Description List</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#sub-products-two" class="sub-nav-link collapsed"
-                                        data-bs-toggle="collapse" aria-expanded="true"
-                                        aria-controls="sub-products-two">
-                                        <span>Colors Swatched</span>
-                                        <span class="btn-open-sub"></span>
-                                    </a>
-                                    <div id="sub-products-two" class="collapse">
-                                        <ul class="sub-nav-menu sub-menu-level-2">
-                                            <li><a href="product-swatch-image.html" class="sub-nav-link">Product
-                                                    Swatch
-                                                    Image</a></li>
-                                            <li><a href="product-swatch-image-rounded.html"
-                                                    class="sub-nav-link">Product
-                                                    Swatch Image Rounded</a></li>
-                                            <li><a href="product-swatch-dropdown.html" class="sub-nav-link">Product
-                                                    Swatch Dropdown</a></li>
-                                            <li><a href="product-swatch-dropdown-color.html"
-                                                    class="sub-nav-link">Product Swatch Dropdown Color</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#sub-products-three" class="sub-nav-link collapsed"
-                                        data-bs-toggle="collapse" aria-expanded="true"
-                                        aria-controls="sub-products-three">
-                                        <span>Products Features</span>
-                                        <span class="btn-open-sub"></span>
-                                    </a>
-                                    <div id="sub-products-three" class="collapse">
-                                        <ul class="sub-nav-menu sub-menu-level-2">
-                                            <li><a href="product-bought-together.html" class="sub-nav-link">Product
-                                                    Bought Together</a></li>
-                                            <li><a href="product-bought-together-2.html"
-                                                    class="sub-nav-link">Product
-                                                    Bought Together 2</a></li>
-                                            <li><a href="product-up-sell.html" class="sub-nav-link">Product Up
-                                                    Sell</a>
-                                            </li>
-                                            <li><a href="product-pre-order.html" class="sub-nav-link">Product Pre
-                                                    Order</a></li>
-                                            <li><a href="product-grouped.html" class="sub-nav-link">Product
-                                                    Grouped</a>
-                                            </li>
-                                            <li><a href="product-out-of-stock.html" class="sub-nav-link">Product Out
-                                                    Of
-                                                    Stock</a></li>
-                                            <li><a href="product-pickup-available.html" class="sub-nav-link">Product
-                                                    Pickup Available</a></li>
-                                            <li><a href="product-external.html" class="sub-nav-link">Product
-                                                    External</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
                     </li>
                     <li class="nav-mb-item">
-                        <a href="#dropdown-menu-four" class="collapsed mb-menu-link" data-bs-toggle="collapse"
-                            aria-expanded="true" aria-controls="dropdown-menu-four">
-                            <span>Blog</span>
-                            <span class="btn-open-sub"></span>
+                        <a href="#contact" class="mb-menu-link" data-bs-dismiss="offcanvas">
+                            <span>Contact</span>
                         </a>
-                        <div id="dropdown-menu-four" class="collapse">
-                            <ul class="sub-nav-menu">
-                                <li><a href="blog-list.html" class="sub-nav-link">Blog List</a></li>
-                                <li><a href="blog-grid.html" class="sub-nav-link">Blog Grid</a></li>
-                                <li><a href="blog-details.html" class="sub-nav-link">Blog Detail</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-mb-item">
-                        <a href="#dropdown-menu-five" class="collapsed mb-menu-link" data-bs-toggle="collapse"
-                            aria-expanded="true" aria-controls="dropdown-menu-five">
-                            <span>Page</span>
-                            <span class="btn-open-sub"></span>
-                        </a>
-                        <div id="dropdown-menu-five" class="collapse">
-                            <ul class="sub-nav-menu">
-                                <li><a href="about.html" class="sub-nav-link">About Us</a></li>
-                                <li><a href="faqs.html" class="sub-nav-link">Faqs</a></li>
-                                <li><a href="store-list.html" class="sub-nav-link">Store List</a></li>
-                                <li><a href="term-of-use.html" class="sub-nav-link">Term Of Use</a></li>
-                                <li><a href="contact.html" class="sub-nav-link">Contact Us</a></li>
-                            </ul>
-                        </div>
                     </li>
                 </ul>
                 <div class="mb-other-content">
