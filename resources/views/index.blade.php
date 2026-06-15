@@ -4,8 +4,8 @@
     <!-- .silideshow -->
     <div class="tf-slideshow style-default slider-nav-sw slider-effect-fade efect-2">
         <div dir="ltr" class="swiper tf-sw-slideshow" data-preview="1.428" data-tablet="1.2" data-mobile="1"
-            data-centered="true" data-space="20" data-space-mb="0" data-loop="true" data-auto-play="false" data-pagination="1"
-            data-pagination-md="1" data-pagination-lg="1">
+            data-centered="true" data-space="20" data-space-mb="0" data-loop="true" data-auto-play="false"
+            data-pagination="1" data-pagination-md="1" data-pagination-lg="1">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="wrap-slider slide-1">
@@ -104,32 +104,28 @@
                             <div class="cls-img-item hover-img">
                                 <div class="image img-style">
                                     <img data-src="{{ asset('assets/images/section/collections-banner-1.jpg') }}"
-                                        src="{{ asset('assets/images/section/collections-banner-1.jpg') }}"
-                                        alt="Cls Image">
+                                        src="{{ asset('assets/images/section/collections-banner-1.jpg') }}" alt="Cls Image">
                                 </div>
                                 <h3><a class="link" href="shop-default.html">Lighting</a></h3>
                             </div>
                             <div class="cls-img-item hover-img">
                                 <div class="image img-style">
                                     <img data-src="{{ asset('assets/images/section/collections-banner-2.jpg') }}"
-                                        src="{{ asset('assets/images/section/collections-banner-2.jpg') }}"
-                                        alt="Cls Image">
+                                        src="{{ asset('assets/images/section/collections-banner-2.jpg') }}" alt="Cls Image">
                                 </div>
                                 <h3><a class="link" href="shop-default.html">Office Chairs</a></h3>
                             </div>
                             <div class="cls-img-item hover-img">
                                 <div class="image img-style">
                                     <img data-src="{{ asset('assets/images/section/collections-banner-3.jpg') }}"
-                                        src="{{ asset('assets/images/section/collections-banner-3.jpg') }}"
-                                        alt="Cls Image">
+                                        src="{{ asset('assets/images/section/collections-banner-3.jpg') }}" alt="Cls Image">
                                 </div>
                                 <h3><a class="link" href="shop-default.html">Accessories</a></h3>
                             </div>
                             <div class="cls-img-item hover-img">
                                 <div class="image img-style">
                                     <img data-src="{{ asset('assets/images/section/collections-banner-4.jpg') }}"
-                                        src="{{ asset('assets/images/section/collections-banner-4.jpg') }}"
-                                        alt="Cls Image">
+                                        src="{{ asset('assets/images/section/collections-banner-4.jpg') }}" alt="Cls Image">
                                 </div>
                                 <h3><a class="link" href="shop-default.html">Decor Office</a></h3>
                             </div>
@@ -148,7 +144,7 @@
             <div class="row justify-center">
                 <div class="col-lg-8">
                     <div class="heading-section text-center spacing-2">
-                        <h1 class="wow fadeInUp">We Are GearO</h1>
+                        <h1 class="wow fadeInUp">We Are Caspian</h1>
                         <p class="text-body-1 text_secondary wow fadeInUp" data-wow-delay="0.1s">
                             We create unique furniture that improves the
                             new ways in which people live, work and play. For more than 70 years, we've
@@ -159,8 +155,7 @@
                 </div>
                 <div class="col-12">
                     <div class="img-wrap">
-                        <img class="lazyload effect-paralax "
-                            src="{{ asset('assets/images/section/section-about.jpg') }}"
+                        <img class="lazyload effect-paralax " src="{{ asset('assets/images/section/section-about.jpg') }}"
                             data-src="{{ asset('assets/images/section/section-about.jpg') }}" alt="">
                     </div>
                     <div class="main-content">
@@ -184,9 +179,9 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <div dir="ltr" class="swiper tf-sw-iconbox" data-preview="4" data-tablet="3"
-                        data-mobile-sm="2" data-mobile="1" data-space-lg="30" data-space-md="30" data-space="15"
-                        data-pagination="1" data-pagination-sm="2" data-pagination-md="3" data-pagination-lg="4">
+                    <div dir="ltr" class="swiper tf-sw-iconbox" data-preview="4" data-tablet="3" data-mobile-sm="2"
+                        data-mobile="1" data-space-lg="30" data-space-md="30" data-space="15" data-pagination="1"
+                        data-pagination-sm="2" data-pagination-md="3" data-pagination-lg="4">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="tf-box-icon">
@@ -246,15 +241,14 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="img-style ">
-                        <img class="lazyload " src="{{ asset('assets/images/section/box-about.jpg') }}"
-                            alt="img_box-about">
+                        <img class="lazyload " src="{{ asset('assets/images/section/box-about.jpg') }}" alt="img_box-about">
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="box-about">
                         <div class="heading-section spacing-3">
                             <h3 class="wow fadeInUp">Danish Design DNA</h3>
-                            <p class="text-body-1 text_secondary wow fadeInUp" data-wow-delay="0.1s">GearO
+                            <p class="text-body-1 text_secondary wow fadeInUp" data-wow-delay="0.1s">Caspian
                                 products reflect the values of
                                 craftsmanship, simplicity, functionality and quality materials that define our
                                 Danish design roots.</p>
@@ -335,8 +329,7 @@
                                         <span class="icon icon-compare"></span>
                                         <span class="tooltip">Compare</span>
                                     </a>
-                                    <a href="#quickView" data-bs-toggle="modal"
-                                        class="box-icon quickview tf-btn-loading">
+                                    <a href="#quickView" data-bs-toggle="modal" class="box-icon quickview tf-btn-loading">
                                         <span class="icon icon-eye"></span>
                                         <span class="tooltip">Quick View</span>
                                     </a>
@@ -355,15 +348,13 @@
                                     <li class="list-color-item color-swatch active">
                                         <span class="d-none text-capitalize color-filter">Light Blue</span>
                                         <span class="swatch-value bg-light-blue"></span>
-                                        <img class="lazyload"
-                                            data-src="{{ asset('assets/images/shop/product-1.2.jpg') }}"
+                                        <img class="lazyload" data-src="{{ asset('assets/images/shop/product-1.2.jpg') }}"
                                             src="{{ asset('assets/images/shop/product-1.2.jpg') }}" alt="image-product">
                                     </li>
                                     <li class="list-color-item color-swatch">
                                         <span class="d-none text-capitalize color-filter">Light Blue</span>
                                         <span class="swatch-value bg-light-blue-2"></span>
-                                        <img class="lazyload"
-                                            data-src="{{ asset('assets/images/shop/product-1.3.jpg') }}"
+                                        <img class="lazyload" data-src="{{ asset('assets/images/shop/product-1.3.jpg') }}"
                                             src="{{ asset('assets/images/shop/product-1.3.jpg') }}" alt="image-product">
                                     </li>
                                 </ul>
@@ -391,8 +382,7 @@
                                         <span class="icon icon-compare"></span>
                                         <span class="tooltip">Compare</span>
                                     </a>
-                                    <a href="#quickView" data-bs-toggle="modal"
-                                        class="box-icon quickview tf-btn-loading">
+                                    <a href="#quickView" data-bs-toggle="modal" class="box-icon quickview tf-btn-loading">
                                         <span class="icon icon-eye"></span>
                                         <span class="tooltip">Quick View</span>
                                     </a>
@@ -418,8 +408,7 @@
                                     <li class="list-color-item color-swatch">
                                         <span class="d-none text-capitalize color-filter">Light Blue</span>
                                         <span class="swatch-value bg-light-blue-2"></span>
-                                        <img class="lazyload"
-                                            data-src="{{ asset('assets/images/shop/product-2.2.jpg') }}"
+                                        <img class="lazyload" data-src="{{ asset('assets/images/shop/product-2.2.jpg') }}"
                                             src="{{ asset('assets/images/shop/product-2.2.jpg') }}" alt="image-product">
                                     </li>
                                 </ul>
@@ -447,8 +436,7 @@
                                         <span class="icon icon-compare"></span>
                                         <span class="tooltip">Compare</span>
                                     </a>
-                                    <a href="#quickView" data-bs-toggle="modal"
-                                        class="box-icon quickview tf-btn-loading">
+                                    <a href="#quickView" data-bs-toggle="modal" class="box-icon quickview tf-btn-loading">
                                         <span class="icon icon-eye"></span>
                                         <span class="tooltip">Quick View</span>
                                     </a>
@@ -467,15 +455,13 @@
                                     <li class="list-color-item color-swatch active">
                                         <span class="d-none text-capitalize color-filter">Light Orange</span>
                                         <span class="swatch-value bg-light-orange"></span>
-                                        <img class="lazyload"
-                                            data-src="{{ asset('assets/images/shop/product-3.2.jpg') }}"
+                                        <img class="lazyload" data-src="{{ asset('assets/images/shop/product-3.2.jpg') }}"
                                             src="{{ asset('assets/images/shop/product-3.2.jpg') }}" alt="image-product">
                                     </li>
                                     <li class="list-color-item color-swatch">
                                         <span class="d-none text-capitalize color-filter">Light Grey</span>
                                         <span class="swatch-value bg-light-grey"></span>
-                                        <img class="lazyload"
-                                            data-src="{{ asset('assets/images/shop/product-3.3.jpg') }}"
+                                        <img class="lazyload" data-src="{{ asset('assets/images/shop/product-3.3.jpg') }}"
                                             src="{{ asset('assets/images/shop/product-3.3.jpg') }}" alt="image-product">
                                     </li>
                                 </ul>
@@ -501,8 +487,7 @@
                                         <span class="icon icon-compare"></span>
                                         <span class="tooltip">Compare</span>
                                     </a>
-                                    <a href="#quickView" data-bs-toggle="modal"
-                                        class="box-icon quickview tf-btn-loading">
+                                    <a href="#quickView" data-bs-toggle="modal" class="box-icon quickview tf-btn-loading">
                                         <span class="icon icon-eye"></span>
                                         <span class="tooltip">Quick View</span>
                                     </a>
@@ -521,22 +506,19 @@
                                     <li class="list-color-item color-swatch active">
                                         <span class="d-none text-capitalize color-filter">Light Brown</span>
                                         <span class="swatch-value bg-light-brown"></span>
-                                        <img class="lazyload"
-                                            data-src="{{ asset('assets/images/shop/product-4.2.jpg') }}"
+                                        <img class="lazyload" data-src="{{ asset('assets/images/shop/product-4.2.jpg') }}"
                                             src="{{ asset('assets/images/shop/product-4.2.jpg') }}" alt="image-product">
                                     </li>
                                     <li class="list-color-item color-swatch">
                                         <span class="d-none text-capitalize color-filter">Light Bink</span>
                                         <span class="swatch-value bg-light-pink"></span>
-                                        <img class="lazyload"
-                                            data-src="{{ asset('assets/images/shop/product-4.3.jpg') }}"
+                                        <img class="lazyload" data-src="{{ asset('assets/images/shop/product-4.3.jpg') }}"
                                             src="{{ asset('assets/images/shop/product-4.3.jpg') }}" alt="image-product">
                                     </li>
                                     <li class="list-color-item color-swatch">
                                         <span class="d-none text-capitalize color-filter">Light Grey</span>
                                         <span class="swatch-value bg-dark-grey-2"></span>
-                                        <img class="lazyload"
-                                            data-src="{{ asset('assets/images/shop/product-4.4.jpg') }}"
+                                        <img class="lazyload" data-src="{{ asset('assets/images/shop/product-4.4.jpg') }}"
                                             src="{{ asset('assets/images/shop/product-4.4.jpg') }}" alt="image-product">
                                     </li>
                                 </ul>
@@ -564,8 +546,7 @@
                                         <span class="icon icon-compare"></span>
                                         <span class="tooltip">Compare</span>
                                     </a>
-                                    <a href="#quickView" data-bs-toggle="modal"
-                                        class="box-icon quickview tf-btn-loading">
+                                    <a href="#quickView" data-bs-toggle="modal" class="box-icon quickview tf-btn-loading">
                                         <span class="icon icon-eye"></span>
                                         <span class="tooltip">Quick View</span>
                                     </a>
@@ -585,15 +566,13 @@
                                     <li class="list-color-item color-swatch active">
                                         <span class="d-none text-capitalize color-filter">Light Orange</span>
                                         <span class="swatch-value bg-light-orange"></span>
-                                        <img class="lazyload"
-                                            data-src="{{ asset('assets/images/shop/product-5.2.jpg') }}"
+                                        <img class="lazyload" data-src="{{ asset('assets/images/shop/product-5.2.jpg') }}"
                                             src="{{ asset('assets/images/shop/product-5.2.jpg') }}" alt="image-product">
                                     </li>
                                     <li class="list-color-item color-swatch">
                                         <span class="d-none text-capitalize color-filter">Light Grey</span>
                                         <span class="swatch-value bg-light-grey"></span>
-                                        <img class="lazyload"
-                                            data-src="{{ asset('assets/images/shop/product-5.3.jpg') }}"
+                                        <img class="lazyload" data-src="{{ asset('assets/images/shop/product-5.3.jpg') }}"
                                             src="{{ asset('assets/images/shop/product-5.3.jpg') }}" alt="image-product">
                                     </li>
                                 </ul>
@@ -619,8 +598,7 @@
                                         <span class="icon icon-compare"></span>
                                         <span class="tooltip">Compare</span>
                                     </a>
-                                    <a href="#quickView" data-bs-toggle="modal"
-                                        class="box-icon quickview tf-btn-loading">
+                                    <a href="#quickView" data-bs-toggle="modal" class="box-icon quickview tf-btn-loading">
                                         <span class="icon icon-eye"></span>
                                         <span class="tooltip">Quick View</span>
                                     </a>
@@ -645,8 +623,7 @@
                                     <li class="list-color-item color-swatch">
                                         <span class="d-none text-capitalize color-filter">Light Blue</span>
                                         <span class="swatch-value bg-light-blue-2"></span>
-                                        <img class="lazyload"
-                                            data-src="{{ asset('assets/images/shop/product-6.2.jpg') }}"
+                                        <img class="lazyload" data-src="{{ asset('assets/images/shop/product-6.2.jpg') }}"
                                             src="{{ asset('assets/images/shop/product-6.2.jpg') }}" alt="image-product">
                                     </li>
                                 </ul>
@@ -674,8 +651,7 @@
                                         <span class="icon icon-compare"></span>
                                         <span class="tooltip">Compare</span>
                                     </a>
-                                    <a href="#quickView" data-bs-toggle="modal"
-                                        class="box-icon quickview tf-btn-loading">
+                                    <a href="#quickView" data-bs-toggle="modal" class="box-icon quickview tf-btn-loading">
                                         <span class="icon icon-eye"></span>
                                         <span class="tooltip">Quick View</span>
                                     </a>
@@ -695,15 +671,13 @@
                                     <li class="list-color-item color-swatch active">
                                         <span class="d-none text-capitalize color-filter">Light Blue</span>
                                         <span class="swatch-value bg-light-blue"></span>
-                                        <img class="lazyload"
-                                            data-src="{{ asset('assets/images/shop/product-7.2.jpg') }}"
+                                        <img class="lazyload" data-src="{{ asset('assets/images/shop/product-7.2.jpg') }}"
                                             src="{{ asset('assets/images/shop/product-7.2.jpg') }}" alt="image-product">
                                     </li>
                                     <li class="list-color-item color-swatch">
                                         <span class="d-none text-capitalize color-filter">Light Blue</span>
                                         <span class="swatch-value bg-light-blue-2"></span>
-                                        <img class="lazyload"
-                                            data-src="{{ asset('assets/images/shop/product-7.3.jpg') }}"
+                                        <img class="lazyload" data-src="{{ asset('assets/images/shop/product-7.3.jpg') }}"
                                             src="{{ asset('assets/images/shop/product-7.3.jpg') }}" alt="image-product">
                                     </li>
                                 </ul>
@@ -729,8 +703,7 @@
                                         <span class="icon icon-compare"></span>
                                         <span class="tooltip">Compare</span>
                                     </a>
-                                    <a href="#quickView" data-bs-toggle="modal"
-                                        class="box-icon quickview tf-btn-loading">
+                                    <a href="#quickView" data-bs-toggle="modal" class="box-icon quickview tf-btn-loading">
                                         <span class="icon icon-eye"></span>
                                         <span class="tooltip">Quick View</span>
                                     </a>
@@ -749,22 +722,19 @@
                                     <li class="list-color-item color-swatch active">
                                         <span class="d-none text-capitalize color-filter">Light Brown</span>
                                         <span class="swatch-value bg-light-brown"></span>
-                                        <img class="lazyload"
-                                            data-src="{{ asset('assets/images/shop/product-8.2.jpg') }}"
+                                        <img class="lazyload" data-src="{{ asset('assets/images/shop/product-8.2.jpg') }}"
                                             src="{{ asset('assets/images/shop/product-8.2.jpg') }}" alt="image-product">
                                     </li>
                                     <li class="list-color-item color-swatch">
                                         <span class="d-none text-capitalize color-filter">Light Bink</span>
                                         <span class="swatch-value bg-light-pink"></span>
-                                        <img class="lazyload"
-                                            data-src="{{ asset('assets/images/shop/product-8.3.jpg') }}"
+                                        <img class="lazyload" data-src="{{ asset('assets/images/shop/product-8.3.jpg') }}"
                                             src="{{ asset('assets/images/shop/product-8.3.jpg') }}" alt="image-product">
                                     </li>
                                     <li class="list-color-item color-swatch">
                                         <span class="d-none text-capitalize color-filter">Light Grey</span>
                                         <span class="swatch-value bg-dark-grey-2"></span>
-                                        <img class="lazyload"
-                                            data-src="{{ asset('assets/images/shop/product-8.4.jpg') }}"
+                                        <img class="lazyload" data-src="{{ asset('assets/images/shop/product-8.4.jpg') }}"
                                             src="{{ asset('assets/images/shop/product-8.4.jpg') }}" alt="image-product">
                                     </li>
                                 </ul>
@@ -864,8 +834,7 @@
                                         <span class="icon icon-compare"></span>
                                         <span class="tooltip">Compare</span>
                                     </a>
-                                    <a href="#quickView" data-bs-toggle="modal"
-                                        class="box-icon quickview tf-btn-loading">
+                                    <a href="#quickView" data-bs-toggle="modal" class="box-icon quickview tf-btn-loading">
                                         <span class="icon icon-eye"></span>
                                         <span class="tooltip">Quick View</span>
                                     </a>
@@ -883,15 +852,13 @@
                                     <li class="list-color-item color-swatch active">
                                         <span class="d-none text-capitalize color-filter">Light Blue</span>
                                         <span class="swatch-value bg-light-blue"></span>
-                                        <img class="lazyload"
-                                            data-src="{{ asset('assets/images/shop/product-1.2.jpg') }}"
+                                        <img class="lazyload" data-src="{{ asset('assets/images/shop/product-1.2.jpg') }}"
                                             src="{{ asset('assets/images/shop/product-1.2.jpg') }}" alt="image-product">
                                     </li>
                                     <li class="list-color-item color-swatch">
                                         <span class="d-none text-capitalize color-filter">Light Blue</span>
                                         <span class="swatch-value bg-light-blue-2"></span>
-                                        <img class="lazyload"
-                                            data-src="{{ asset('assets/images/shop/product-1.3.jpg') }}"
+                                        <img class="lazyload" data-src="{{ asset('assets/images/shop/product-1.3.jpg') }}"
                                             src="{{ asset('assets/images/shop/product-1.3.jpg') }}" alt="image-product">
                                     </li>
                                 </ul>
@@ -919,8 +886,7 @@
                                         <span class="icon icon-compare"></span>
                                         <span class="tooltip">Compare</span>
                                     </a>
-                                    <a href="#quickView" data-bs-toggle="modal"
-                                        class="box-icon quickview tf-btn-loading">
+                                    <a href="#quickView" data-bs-toggle="modal" class="box-icon quickview tf-btn-loading">
                                         <span class="icon icon-eye"></span>
                                         <span class="tooltip">Quick View</span>
                                     </a>
@@ -938,22 +904,19 @@
                                     <li class="list-color-item color-swatch active">
                                         <span class="d-none text-capitalize color-filter">Light Brown</span>
                                         <span class="swatch-value bg-light-brown"></span>
-                                        <img class="lazyload"
-                                            data-src="{{ asset('assets/images/shop/product-4.2.jpg') }}"
+                                        <img class="lazyload" data-src="{{ asset('assets/images/shop/product-4.2.jpg') }}"
                                             src="{{ asset('assets/images/shop/product-4.2.jpg') }}" alt="image-product">
                                     </li>
                                     <li class="list-color-item color-swatch">
                                         <span class="d-none text-capitalize color-filter">Light Bink</span>
                                         <span class="swatch-value bg-light-pink"></span>
-                                        <img class="lazyload"
-                                            data-src="{{ asset('assets/images/shop/product-4.3.jpg') }}"
+                                        <img class="lazyload" data-src="{{ asset('assets/images/shop/product-4.3.jpg') }}"
                                             src="{{ asset('assets/images/shop/product-4.3.jpg') }}" alt="image-product">
                                     </li>
                                     <li class="list-color-item color-swatch">
                                         <span class="d-none text-capitalize color-filter">Light Grey</span>
                                         <span class="swatch-value bg-dark-grey-2"></span>
-                                        <img class="lazyload"
-                                            data-src="{{ asset('assets/images/shop/product-4.4.jpg') }}"
+                                        <img class="lazyload" data-src="{{ asset('assets/images/shop/product-4.4.jpg') }}"
                                             src="{{ asset('assets/images/shop/product-4.4.jpg') }}" alt="image-product">
                                     </li>
                                 </ul>
@@ -1017,8 +980,8 @@
                                                 </a>
                                             </div>
                                             <div class="list-btn-main">
-                                                <a href="#shoppingCart" data-bs-toggle="modal"
-                                                    class="btn-main-product">Add To
+                                                <a href="#shoppingCart" data-bs-toggle="modal" class="btn-main-product">Add
+                                                    To
                                                     cart</a>
                                             </div>
                                         </div>
@@ -1081,8 +1044,8 @@
                                                 </a>
                                             </div>
                                             <div class="list-btn-main">
-                                                <a href="#shoppingCart" data-bs-toggle="modal"
-                                                    class="btn-main-product">Add To
+                                                <a href="#shoppingCart" data-bs-toggle="modal" class="btn-main-product">Add
+                                                    To
                                                     cart</a>
                                             </div>
                                         </div>
@@ -1146,8 +1109,8 @@
                                                 </a>
                                             </div>
                                             <div class="list-btn-main">
-                                                <a href="#shoppingCart" data-bs-toggle="modal"
-                                                    class="btn-main-product">Add To
+                                                <a href="#shoppingCart" data-bs-toggle="modal" class="btn-main-product">Add
+                                                    To
                                                     cart</a>
                                             </div>
                                         </div>
@@ -1209,8 +1172,8 @@
                                                 </a>
                                             </div>
                                             <div class="list-btn-main">
-                                                <a href="#shoppingCart" data-bs-toggle="modal"
-                                                    class="btn-main-product">Add To
+                                                <a href="#shoppingCart" data-bs-toggle="modal" class="btn-main-product">Add
+                                                    To
                                                     cart</a>
                                             </div>
                                         </div>
@@ -1280,8 +1243,8 @@
                                                 </a>
                                             </div>
                                             <div class="list-btn-main">
-                                                <a href="#shoppingCart" data-bs-toggle="modal"
-                                                    class="btn-main-product">Add To
+                                                <a href="#shoppingCart" data-bs-toggle="modal" class="btn-main-product">Add
+                                                    To
                                                     cart</a>
                                             </div>
                                         </div>
@@ -1410,89 +1373,89 @@
     </section> <!-- /.collection  -->
     <!-- .collections -->
     {{-- <section class="flat-spacing-2 pt-0">
-            <div class="section-box-cls">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="heading-section style-white">
-                                <h3 class="wow fadeInUp">Discover Our Signature Interior Collections</h3>
-                                <p class="text-body-default wow fadeInUp" data-wow-delay="0.1s">Explore our
-                                    carefully
-                                    crafted interior design
-                                    collections, each tailored to bring elegance and <br> functionality to your spaces.
-                                </p>
-                            </div>
-                            <ul class="tab-banner">
-                                <li class="nav-tab-item wow fadeInUp">
-                                    <div class="nav-tab-link hover-cursor-img">
-                                        <h3 class="title text-line-clamp-1">
-                                            <span class="text-title">01.</span>
-                                            Modern Minimalist Collection
-                                        </h3>
-                                        <a href="shop-default.html" class="arr-link">
-                                            <span class="text-button-small text-more">View More</span>
-                                            <i class="icon icon-arrow-up-right"></i>
-                                        </a>
-                                        <div class="hover-image">
-                                            <img src="{{ asset('assets/images/section/collections-banner.jpg') }}"
-                                                alt="Hover Image">
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="nav-tab-item wow fadeInUp" data-wow-delay="0.1s">
-                                    <div class="nav-tab-link hover-cursor-img ">
-                                        <h3 class="title text-line-clamp-1">
-                                            <span class="text-title">02.</span>
-                                            Cozy Industrial Collection
-                                        </h3>
-                                        <a href="shop-default.html" class="arr-link">
-                                            <span class="text-button-small text-more">View More</span>
-                                            <i class="icon icon-arrow-up-right"></i>
-                                        </a>
-                                        <div class="hover-image">
-                                            <img src="{{ asset('assets/images/section/collections-banner-1.jpg') }}"
-                                                alt="Hover Image">
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="nav-tab-item wow fadeInUp" data-wow-delay="0.2s">
-                                    <div class="nav-tab-link hover-cursor-img">
-                                        <h3 class="title text-line-clamp-1">
-                                            <span class="text-title">03.</span>
-                                            Scandinavian Elegance Collection
-                                        </h3>
-                                        <a href="shop-default.html" class="arr-link">
-                                            <span class="text-button-small text-more">View More</span>
-                                            <i class="icon icon-arrow-up-right"></i>
-                                        </a>
-                                        <div class="hover-image">
-                                            <img src="{{ asset('assets/images/section/collections-banner-2.jpg') }}"
-                                                alt="Hover Image">
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="nav-tab-item wow fadeInUp" data-wow-delay="0.2s">
-                                    <div class="nav-tab-link hover-cursor-img">
-                                        <h3 class="title text-line-clamp-1">
-                                            <span class="text-title">04.</span>
-                                            Storage Solutions Collection
-                                        </h3>
-                                        <a href="shop-default.html" class="arr-link">
-                                            <span class="text-button-small text-more">View More</span>
-                                            <i class="icon icon-arrow-up-right"></i>
-                                        </a>
-                                        <div class="hover-image">
-                                            <img src="{{ asset('assets/images/section/collections-banner-3.jpg') }}"
-                                                alt="Hover Image">
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
+        <div class="section-box-cls">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="heading-section style-white">
+                            <h3 class="wow fadeInUp">Discover Our Signature Interior Collections</h3>
+                            <p class="text-body-default wow fadeInUp" data-wow-delay="0.1s">Explore our
+                                carefully
+                                crafted interior design
+                                collections, each tailored to bring elegance and <br> functionality to your spaces.
+                            </p>
                         </div>
+                        <ul class="tab-banner">
+                            <li class="nav-tab-item wow fadeInUp">
+                                <div class="nav-tab-link hover-cursor-img">
+                                    <h3 class="title text-line-clamp-1">
+                                        <span class="text-title">01.</span>
+                                        Modern Minimalist Collection
+                                    </h3>
+                                    <a href="shop-default.html" class="arr-link">
+                                        <span class="text-button-small text-more">View More</span>
+                                        <i class="icon icon-arrow-up-right"></i>
+                                    </a>
+                                    <div class="hover-image">
+                                        <img src="{{ asset('assets/images/section/collections-banner.jpg') }}"
+                                            alt="Hover Image">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-tab-item wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="nav-tab-link hover-cursor-img ">
+                                    <h3 class="title text-line-clamp-1">
+                                        <span class="text-title">02.</span>
+                                        Cozy Industrial Collection
+                                    </h3>
+                                    <a href="shop-default.html" class="arr-link">
+                                        <span class="text-button-small text-more">View More</span>
+                                        <i class="icon icon-arrow-up-right"></i>
+                                    </a>
+                                    <div class="hover-image">
+                                        <img src="{{ asset('assets/images/section/collections-banner-1.jpg') }}"
+                                            alt="Hover Image">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-tab-item wow fadeInUp" data-wow-delay="0.2s">
+                                <div class="nav-tab-link hover-cursor-img">
+                                    <h3 class="title text-line-clamp-1">
+                                        <span class="text-title">03.</span>
+                                        Scandinavian Elegance Collection
+                                    </h3>
+                                    <a href="shop-default.html" class="arr-link">
+                                        <span class="text-button-small text-more">View More</span>
+                                        <i class="icon icon-arrow-up-right"></i>
+                                    </a>
+                                    <div class="hover-image">
+                                        <img src="{{ asset('assets/images/section/collections-banner-2.jpg') }}"
+                                            alt="Hover Image">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-tab-item wow fadeInUp" data-wow-delay="0.2s">
+                                <div class="nav-tab-link hover-cursor-img">
+                                    <h3 class="title text-line-clamp-1">
+                                        <span class="text-title">04.</span>
+                                        Storage Solutions Collection
+                                    </h3>
+                                    <a href="shop-default.html" class="arr-link">
+                                        <span class="text-button-small text-more">View More</span>
+                                        <i class="icon icon-arrow-up-right"></i>
+                                    </a>
+                                    <div class="hover-image">
+                                        <img src="{{ asset('assets/images/section/collections-banner-3.jpg') }}"
+                                            alt="Hover Image">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </section><!-- /.collections --> --}}
+        </div>
+    </section><!-- /.collections --> --}}
 
     <!-- .testimonials -->
     <section class="flat-spacing-2  section-testimonials">
@@ -1507,19 +1470,17 @@
                             constantly aim to delight them.</p>
                     </div>
                     <div class="swiper tf-sw-testimonial" data-preview="3" data-tablet="2" data-mobile="1"
-                        data-space-lg="30" data-space-md="30" data-space="15" data-pagination="1"
-                        data-pagination-md="1" data-pagination-lg="1">
+                        data-space-lg="30" data-space-md="30" data-space="15" data-pagination="1" data-pagination-md="1"
+                        data-pagination-lg="1">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="testimonial-item hover-img style-2">
                                     <div class="content">
                                         <div class="content-top">
                                             <div class="box-author align-items-center d-flex gap-6">
-                                                <div class="text-title author"><a href="#"
-                                                        class="link">Sarah</a>
+                                                <div class="text-title author"><a href="#" class="link">Sarah</a>
                                                 </div>
-                                                <svg class="icon" width="20" height="21"
-                                                    viewBox="0 0 20 21" fill="none"
+                                                <svg class="icon" width="20" height="21" viewBox="0 0 20 21" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <g clip-path="url(#clip0_15758_14563)">
                                                         <path d="M6.875 11.6255L8.75 13.5005L13.125 9.12549"
@@ -1571,11 +1532,9 @@
                                     <div class="content">
                                         <div class="content-top">
                                             <div class="box-author align-items-center d-flex gap-6">
-                                                <div class="text-title author"><a href="#"
-                                                        class="link">Michael</a>
+                                                <div class="text-title author"><a href="#" class="link">Michael</a>
                                                 </div>
-                                                <svg class="icon" width="20" height="21"
-                                                    viewBox="0 0 20 21" fill="none"
+                                                <svg class="icon" width="20" height="21" viewBox="0 0 20 21" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <g clip-path="url(#clip0_15758_14563)">
                                                         <path d="M6.875 11.6255L8.75 13.5005L13.125 9.12549"
@@ -1627,11 +1586,9 @@
                                     <div class="content">
                                         <div class="content-top">
                                             <div class="box-author align-items-center d-flex gap-6">
-                                                <div class="text-title author"><a href="#"
-                                                        class="link">Jennifer</a>
+                                                <div class="text-title author"><a href="#" class="link">Jennifer</a>
                                                 </div>
-                                                <svg class="icon" width="20" height="21"
-                                                    viewBox="0 0 20 21" fill="none"
+                                                <svg class="icon" width="20" height="21" viewBox="0 0 20 21" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <g clip-path="url(#clip0_15758_14563)">
                                                         <path d="M6.875 11.6255L8.75 13.5005L13.125 9.12549"
@@ -1683,11 +1640,9 @@
                                     <div class="content">
                                         <div class="content-top">
                                             <div class="box-author align-items-center d-flex gap-6">
-                                                <div class="text-title author"><a href="#"
-                                                        class="link">Sarah</a>
+                                                <div class="text-title author"><a href="#" class="link">Sarah</a>
                                                 </div>
-                                                <svg class="icon" width="20" height="21"
-                                                    viewBox="0 0 20 21" fill="none"
+                                                <svg class="icon" width="20" height="21" viewBox="0 0 20 21" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <g clip-path="url(#clip0_15758_14563)">
                                                         <path d="M6.875 11.6255L8.75 13.5005L13.125 9.12549"
@@ -1922,16 +1877,15 @@
                         </p>
                     </div>
                     <div class="swiper tf-sw-shop-gallery" data-preview="5" data-tablet="3" data-mobile="2"
-                        data-space-lg="10" data-space-md="10" data-space="8" data-pagination="2"
-                        data-pagination-md="3" data-pagination-lg="1">
+                        data-space-lg="10" data-space-md="10" data-space="8" data-pagination="2" data-pagination-md="3"
+                        data-pagination-lg="1">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="gallery-item hover-overlay hover-img wow fadeInUp" data-wow-delay="0s">
                                     <div class="img-style">
                                         <img class="lazyload img-hover"
                                             data-src="{{ asset('assets/images/gallery/gallery-1.jpg') }}"
-                                            src="{{ asset('assets/images/gallery/gallery-1.jpg') }}"
-                                            alt="image-gallery">
+                                            src="{{ asset('assets/images/gallery/gallery-1.jpg') }}" alt="image-gallery">
                                     </div>
                                     <a href="product-detail.html" class="box-icon hover-tooltip"><span
                                             class="icon icon-eye"></span> <span class="tooltip">View
@@ -1943,8 +1897,7 @@
                                     <div class="img-style">
                                         <img class="lazyload img-hover"
                                             data-src="{{ asset('assets/images/gallery/gallery-2.jpg') }}"
-                                            src="{{ asset('assets/images/gallery/gallery-2.jpg') }}"
-                                            alt="image-gallery">
+                                            src="{{ asset('assets/images/gallery/gallery-2.jpg') }}" alt="image-gallery">
                                     </div>
                                     <a href="product-detail.html" class="box-icon hover-tooltip"><span
                                             class="icon icon-eye"></span> <span class="tooltip">View
@@ -1956,8 +1909,7 @@
                                     <div class="img-style">
                                         <img class="lazyload img-hover"
                                             data-src="{{ asset('assets/images/gallery/gallery-3.jpg') }}"
-                                            src="{{ asset('assets/images/gallery/gallery-3.jpg') }}"
-                                            alt="image-gallery">
+                                            src="{{ asset('assets/images/gallery/gallery-3.jpg') }}" alt="image-gallery">
                                     </div>
                                     <a href="product-detail.html" class="box-icon hover-tooltip"><span
                                             class="icon icon-eye"></span> <span class="tooltip">View
@@ -1969,8 +1921,7 @@
                                     <div class="img-style">
                                         <img class="lazyload img-hover"
                                             data-src="{{ asset('assets/images/gallery/gallery-4.jpg') }}"
-                                            src="{{ asset('assets/images/gallery/gallery-4.jpg') }}"
-                                            alt="image-gallery">
+                                            src="{{ asset('assets/images/gallery/gallery-4.jpg') }}" alt="image-gallery">
                                     </div>
                                     <a href="product-detail.html" class="box-icon hover-tooltip"><span
                                             class="icon icon-eye"></span> <span class="tooltip">View
@@ -1982,8 +1933,7 @@
                                     <div class="img-style">
                                         <img class="lazyload img-hover"
                                             data-src="{{ asset('assets/images/gallery/gallery-5.jpg') }}"
-                                            src="{{ asset('assets/images/gallery/gallery-5.jpg') }}"
-                                            alt="image-gallery">
+                                            src="{{ asset('assets/images/gallery/gallery-5.jpg') }}" alt="image-gallery">
                                     </div>
                                     <a href="product-detail.html" class="box-icon hover-tooltip"><span
                                             class="icon icon-eye"></span> <span class="tooltip">View
@@ -2024,7 +1974,7 @@
 
                         <div class="showroom-info-block">
                             <span class="info-label">INQUIRIES</span>
-                            <a href="mailto:hello@gearo.com" class="info-link text_primary">hello@gearo.com</a>
+                            <a href="mailto:hello@caspian.com" class="info-link text_primary">hello@caspian.com</a>
                             <a href="tel:+12125550199" class="info-link info-link-phone">+1 (212) 555-0199</a>
                         </div>
 
@@ -2046,9 +1996,8 @@
                             <div class="form-row-premium">
                                 <div class="form-group-premium">
                                     <label class="form-label-premium" for="first-name">FIRST NAME</label>
-                                    <input type="text" id="first-name" name="first_name"
-                                        class="form-input-premium" placeholder="" tabindex="1"
-                                        aria-required="true" required>
+                                    <input type="text" id="first-name" name="first_name" class="form-input-premium"
+                                        placeholder="" tabindex="1" aria-required="true" required>
                                 </div>
                                 <div class="form-group-premium">
                                     <label class="form-label-premium" for="last-name">LAST NAME</label>
@@ -2067,8 +2016,8 @@
                             <!-- Row 3: Subject -->
                             <div class="form-group-premium">
                                 <label class="form-label-premium" for="subject">SUBJECT</label>
-                                <input type="text" id="subject" name="subject" class="form-input-premium"
-                                    placeholder="" tabindex="4">
+                                <input type="text" id="subject" name="subject" class="form-input-premium" placeholder=""
+                                    tabindex="4">
                             </div>
 
                             <!-- Row 4: Message -->

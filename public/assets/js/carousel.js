@@ -77,12 +77,12 @@ if ($(".tf-sw-slideshow").length > 0) {
             nextEl: ".navigation-next-slider",
             prevEl: ".navigation-prev-slider",
         },
-        centeredSlides: false,
+        centeredSlides: centered,
         breakpoints: {
             768: {
                 slidesPerView: tablet,
                 spaceBetween: spacing,
-                centeredSlides: false,
+                centeredSlides: centered,
                 slidesPerGroup: perGroupMd,
             },
             1200: {
