@@ -6,6 +6,7 @@ class MainController extends Controller
 {
     public function home()
     {
-        return view('index');
+        $pageSetting = \App\Models\PageSetting::first();
+        return view('index', compact('pageSetting'));
     }
 }

@@ -14,14 +14,14 @@ class HomeBanner extends Model
         'title',
         'subtitle',
         'image',
-        'position',
-        'status',
         'button_text',
         'button_url',
+        'is_active',
+        'sort_order',
     ];
 
     protected $casts = [
-        'status' => 'boolean',
+        'is_active' => 'boolean',
     ];
 
     

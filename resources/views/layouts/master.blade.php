@@ -4,9 +4,14 @@
 
 <head>
     <meta charset="utf-8">
-    <title>GearO - Office equipment eCommerce HTML Template</title>
-
-    <meta name="author" content="themesflat.com">
+    <title>{{ $pageSetting->seo_title ?? $pageSetting->site_title ?? 'Caspian Furniture' }}</title>
+    @if($pageSetting && $pageSetting->seo_description)
+        <meta name="description" content="{{ $pageSetting->seo_description }}">
+    @endif
+    @if($pageSetting && $pageSetting->seo_keywords)
+        <meta name="keywords" content="{{ $pageSetting->seo_keywords }}">
+    @endif
+    <meta name="author" content="Caspian Furniture">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <!-- font -->
@@ -19,8 +24,8 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/styles.css') }}" />
 
     <!-- Favicon and Touch Icons  -->
-    <link rel="shortcut icon" href="{{ asset('assets/images/logo/caspian_logo.webp') }}">
-    <link rel="apple-touch-icon-precomposed" href="{{ asset('assets/images/logo/caspian_logo.webp') }}">
+    <link rel="shortcut icon" href="{{ $pageSetting && $pageSetting->site_favicon ? Storage::url($pageSetting->site_favicon) : asset('assets/images/logo/caspian_logo.webp') }}">
+    <link rel="apple-touch-icon-precomposed" href="{{ $pageSetting && $pageSetting->site_favicon ? Storage::url($pageSetting->site_favicon) : asset('assets/images/logo/caspian_logo.webp') }}">
     
 
 </head>
@@ -60,10 +65,10 @@
                     <div class="col-xl-4">
                         <div class="topbar-left d-none d-xl-flex">
                             <div class="tf-languages">
-                                <a href="tel:+919833210963" class="text-white">+91 9833210963</a>
+                                <a href="tel:{{ $pageSetting->phone_number ?? '+919833210963' }}" class="text-white">{{ $pageSetting->phone_number ?? '+91 9833210963' }}</a>
                             </div>
                             <div class="tf-currencies">
-                                <a href="tel:+919820123337" class="text-white">+91 9820123337</a>
+                                <a href="mailto:{{ $pageSetting->email ?? 'hello@yourname.com' }}" class="text-white">{{ $pageSetting->email ?? 'hello@yourname.com' }}</a>
                             </div>
                         </div>
                     </div>
@@ -138,7 +143,7 @@
                         </div>
                         <div class="col-xl-2 col-md-4 col-8 text-center">
                             <a href="index.html" class="logo-header">
-                                <img src="{{ asset('assets/images/logo/caspian_logo.webp') }}" alt="logo" class="logo">
+                                <img src="{{ $pageSetting && $pageSetting->site_logo ? Storage::url($pageSetting->site_logo) : asset('assets/images/logo/caspian_logo.webp') }}" alt="logo" class="logo">
                             </a>
                         </div>
                         <div class="col-xl-5 col-md-4 col-2 d-flex justify-content-end align-items-center">
@@ -216,8 +221,8 @@
                                         </div>
                                     </div>
                                     <div class="footer-phone-number">
-                                        <h4 class="text_white number">+61 (9) 567 8765 43</h4>
-                                        <h4 class="text_white mail">hello@yourname.com</h4>
+                                        <h4 class="text_white number">{{ $pageSetting->phone_number ?? '+61 (9) 567 8765 43' }}</h4>
+                                        <h4 class="text_white mail">{{ $pageSetting->email ?? 'hello@yourname.com' }}</h4>
                                     </div>
                                 </div>
                             </div>
@@ -269,7 +274,7 @@
                         <div class="col-12">
                             <div class="footer-bottom-wrap">
                                 <div class="left">
-                                    <p class="text-body-default text_white">Copyright ©2025 GearO. All Rights
+                                    <p class="text-body-default text_white">Copyright ©{{ date('Y') }} {{ $pageSetting->site_title ?? 'GearO' }}. All Rights
                                         Reserved.
                                     </p>
                                 </div>

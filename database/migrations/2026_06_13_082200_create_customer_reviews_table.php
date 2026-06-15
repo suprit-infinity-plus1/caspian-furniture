@@ -11,16 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('home_banners', function (Blueprint $table) {
+        Schema::create('customer_reviews', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
-            $table->text('subtitle')->nullable()    ;
-            $table->string('image');
-            $table->string('button_text')->nullable();
-            $table->string('button_url')->nullable();
+            $table->string('reviewer_name');
+            $table->string('reviewer_image')->nullable();
+            $table->integer('rating');
+            $table->text('review_text');
             $table->boolean('is_active')->default(true);
             $table->integer('sort_order')->default(0);
-
             $table->timestamps();
             $table->softDeletes();
         });
@@ -31,6 +29,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('home_banners');
+        Schema::dropIfExists('customer_reviews');
     }
 };

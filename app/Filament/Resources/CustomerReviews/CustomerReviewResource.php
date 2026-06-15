@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Filament\Resources\HomeBanners;
+namespace App\Filament\Resources\CustomerReviews;
 
-use App\Filament\Resources\HomeBanners\Pages\CreateHomeBanner;
-use App\Filament\Resources\HomeBanners\Pages\EditHomeBanner;
-use App\Filament\Resources\HomeBanners\Pages\ListHomeBanners;
-use App\Filament\Resources\HomeBanners\Schemas\HomeBannerForm;
-use App\Filament\Resources\HomeBanners\Tables\HomeBannersTable;
-use App\Models\HomeBanner;
+use App\Filament\Resources\CustomerReviews\Pages\CreateCustomerReview;
+use App\Filament\Resources\CustomerReviews\Pages\EditCustomerReview;
+use App\Filament\Resources\CustomerReviews\Pages\ListCustomerReviews;
+use App\Filament\Resources\CustomerReviews\Schemas\CustomerReviewForm;
+use App\Filament\Resources\CustomerReviews\Tables\CustomerReviewsTable;
+use App\Models\CustomerReview;
 use BackedEnum;
 use Filament\Resources\Resource;
 use Filament\Schemas\Schema;
@@ -16,22 +16,20 @@ use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
-class HomeBannerResource extends Resource
+class CustomerReviewResource extends Resource
 {
-    protected static ?string $model = HomeBanner::class;
+    protected static ?string $model = CustomerReview::class;
 
     protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
 
-    protected static ?string $recordTitleAttribute = 'title';
-
     public static function form(Schema $schema): Schema
     {
-        return HomeBannerForm::configure($schema);
+        return CustomerReviewForm::configure($schema);
     }
 
     public static function table(Table $table): Table
     {
-        return HomeBannersTable::configure($table);
+        return CustomerReviewsTable::configure($table);
     }
 
     public static function getRelations(): array
@@ -44,9 +42,9 @@ class HomeBannerResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => ListHomeBanners::route('/'),
-            'create' => CreateHomeBanner::route('/create'),
-            'edit' => EditHomeBanner::route('/{record}/edit'),
+            'index' => ListCustomerReviews::route('/'),
+            'create' => CreateCustomerReview::route('/create'),
+            'edit' => EditCustomerReview::route('/{record}/edit'),
         ];
     }
 

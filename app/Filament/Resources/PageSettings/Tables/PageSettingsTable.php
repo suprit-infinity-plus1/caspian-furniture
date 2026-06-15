@@ -1,37 +1,30 @@
 <?php
 
-namespace App\Filament\Resources\HomeBanners\Tables;
+namespace App\Filament\Resources\PageSettings\Tables;
 
 use Filament\Actions\BulkActionGroup;
-use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
-use Filament\Actions\ForceDeleteBulkAction;
-use Filament\Actions\RestoreBulkAction;
-use Filament\Tables\Columns\IconColumn;
-use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Columns\TextColumn;
-use Filament\Tables\Filters\TrashedFilter;
 use Filament\Tables\Table;
 
-class HomeBannersTable
+class PageSettingsTable
 {
     public static function configure(Table $table): Table
     {
         return $table
             ->columns([
-                TextColumn::make('title')
+                TextColumn::make('site_title')
                     ->searchable(),
-                ImageColumn::make('image'),
-                TextColumn::make('button_text')
+                \Filament\Tables\Columns\ImageColumn::make('site_logo'),
+                \Filament\Tables\Columns\ImageColumn::make('site_favicon'),
+                TextColumn::make('seo_title')
                     ->searchable(),
-                TextColumn::make('button_url')
+                TextColumn::make('phone_number')
                     ->searchable(),
-                IconColumn::make('is_active')
-                    ->boolean(),
-                TextColumn::make('sort_order')
-                    ->numeric()
-                    ->sortable(),
+                TextColumn::make('email')
+                    ->label('Email address')
+                    ->searchable(),
                 TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()
@@ -40,13 +33,9 @@ class HomeBannersTable
                     ->dateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
-                TextColumn::make('deleted_at')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
             ])
             ->filters([
-                TrashedFilter::make(),
+                //
             ])
             ->recordActions([
                 EditAction::make(),
@@ -54,8 +43,6 @@ class HomeBannersTable
             ->toolbarActions([
                 BulkActionGroup::make([
                     DeleteBulkAction::make(),
-                    ForceDeleteBulkAction::make(),
-                    RestoreBulkAction::make(),
                 ]),
             ]);
     }
