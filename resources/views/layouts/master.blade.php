@@ -2330,15 +2330,12 @@
             </div>
 
             <!-- Form -->
-            <form id="enquiryForm" class="enquiry-form" onsubmit="return false;">
+            <form id="enquiryForm" class="enquiry-form" action="{{ route('lead.store') }}" method="POST">
+                @csrf
                 <div class="enq-row">
                     <div class="enq-group">
-                        <label class="enq-label" for="enq-fname">FIRST NAME</label>
-                        <input type="text" id="enq-fname" name="first_name" class="enq-input" placeholder="John" required>
-                    </div>
-                    <div class="enq-group">
-                        <label class="enq-label" for="enq-lname">LAST NAME</label>
-                        <input type="text" id="enq-lname" name="last_name" class="enq-input" placeholder="Doe" required>
+                        <label class="enq-label" for="enq-full-name">FULL NAME</label>
+                        <input type="text" id="enq-full-name" name="name" class="enq-input" placeholder="John" required>
                     </div>
                 </div>
                 <div class="enq-group">

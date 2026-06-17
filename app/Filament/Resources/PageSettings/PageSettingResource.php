@@ -22,15 +22,7 @@ class PageSettingResource extends Resource
 
     protected static ?string $recordTitleAttribute = 'site_title';
 
-    public static function canCreate(): bool
-    {
-        return PageSetting::count() === 0;
-    }
 
-    public static function canDelete(\Illuminate\Database\Eloquent\Model $record): bool
-    {
-        return false;
-    }
 
     public static function form(Schema $schema): Schema
     {

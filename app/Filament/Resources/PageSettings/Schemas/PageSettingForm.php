@@ -18,6 +18,10 @@ class PageSettingForm
                     ->tabs([
                         Tabs\Tab::make('General')
                             ->schema([
+                                TextInput::make('page_name')
+                                    ->required()
+                                    ->default('Global Settings')
+                                    ->maxLength(255),
                                 TextInput::make('site_title')
                                     ->required()
                                     ->maxLength(255),
@@ -32,8 +36,12 @@ class PageSettingForm
                             ]),
                         Tabs\Tab::make('SEO')
                             ->schema([
-                                TextInput::make('seo_title')
+                                TextInput::make('canonical_url')
+                                    ->url()
                                     ->maxLength(255),
+                                Textarea::make('schema_markup')
+                                    ->rows(4)
+                                    ->columnSpanFull(),
                                 Textarea::make('seo_description')
                                     ->rows(3)
                                     ->columnSpanFull(),
@@ -50,6 +58,15 @@ class PageSettingForm
                                     ->email(),
                                 Textarea::make('address')
                                     ->rows(3)
+                                    ->columnSpanFull(),
+                                TextInput::make('whatsapp_number')
+                                    ->tel(),
+                                Textarea::make('whatsapp_message')
+                                    ->rows(2)
+                                    ->columnSpanFull(),
+                                \Filament\Forms\Components\KeyValue::make('social_media_links')
+                                    ->keyLabel('Platform Name (e.g. Facebook)')
+                                    ->valueLabel('URL')
                                     ->columnSpanFull(),
                             ]),
                     ])

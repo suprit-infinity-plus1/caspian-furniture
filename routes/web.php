@@ -8,3 +8,5 @@ Route::get('/', function () {
 });
 
 Route::get('/home', [MainController::class, 'home'])->name('home');
+Route::post('/lead', [MainController::class, 'storeLead'])->name('lead.store');
+Route::get('/thank-you', [MainController::class, 'thankyou'])->name('thankyou');

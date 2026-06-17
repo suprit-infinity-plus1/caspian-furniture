@@ -14,12 +14,17 @@ class PageSettingsTable
     {
         return $table
             ->columns([
+                TextColumn::make('page_name')
+                    ->searchable()
+                    ->sortable()
+                    ->weight('bold'),
                 TextColumn::make('site_title')
                     ->searchable(),
                 \Filament\Tables\Columns\ImageColumn::make('site_logo'),
                 \Filament\Tables\Columns\ImageColumn::make('site_favicon'),
-                TextColumn::make('seo_title')
-                    ->searchable(),
+                TextColumn::make('canonical_url')
+                    ->searchable()
+                    ->toggleable(isToggledHiddenByDefault: true),
                 TextColumn::make('phone_number')
                     ->searchable(),
                 TextColumn::make('email')
