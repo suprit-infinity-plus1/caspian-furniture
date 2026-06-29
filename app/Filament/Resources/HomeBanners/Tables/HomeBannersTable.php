@@ -22,7 +22,8 @@ class HomeBannersTable
             ->columns([
                 TextColumn::make('title')
                     ->searchable(),
-                ImageColumn::make('image'),
+                ImageColumn::make('image')
+                    ->disk('public'),
                 TextColumn::make('button_text')
                     ->searchable(),
                 TextColumn::make('button_url')
