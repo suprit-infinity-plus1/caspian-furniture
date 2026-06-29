@@ -4,11 +4,11 @@
 
 <head>
     <meta charset="utf-8">
-    <title>{{ $pageSetting->seo_title ?? $pageSetting->site_title ?? 'Caspian Furniture' }}</title>
-    @if($pageSetting && $pageSetting->seo_description)
+    <title>{{ $pageSetting->seo_title ?? ($pageSetting->site_title ?? 'Caspian Furniture') }}</title>
+    @if ($pageSetting && $pageSetting->seo_description)
         <meta name="description" content="{{ $pageSetting->seo_description }}">
     @endif
-    @if($pageSetting && $pageSetting->seo_keywords)
+    @if ($pageSetting && $pageSetting->seo_keywords)
         <meta name="keywords" content="{{ $pageSetting->seo_keywords }}">
     @endif
     <meta name="author" content="Caspian Furniture">
@@ -24,9 +24,11 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/styles.css') }}" />
 
     <!-- Favicon and Touch Icons  -->
-    <link rel="shortcut icon" href="{{ $pageSetting && $pageSetting->site_favicon ? Storage::url($pageSetting->site_favicon) : asset('assets/images/logo/caspian_logo.webp') }}">
-    <link rel="apple-touch-icon-precomposed" href="{{ $pageSetting && $pageSetting->site_favicon ? Storage::url($pageSetting->site_favicon) : asset('assets/images/logo/caspian_logo.webp') }}">
-    
+    <link rel="shortcut icon"
+        href="{{ $pageSetting && $pageSetting->site_favicon ? Storage::url($pageSetting->site_favicon) : asset('assets/images/logo/caspian_logo.webp') }}">
+    <link rel="apple-touch-icon-precomposed"
+        href="{{ $pageSetting && $pageSetting->site_favicon ? Storage::url($pageSetting->site_favicon) : asset('assets/images/logo/caspian_logo.webp') }}">
+
 
 </head>
 
@@ -65,10 +67,12 @@
                     <div class="col-xl-4">
                         <div class="topbar-left d-none d-xl-flex">
                             <div class="tf-languages">
-                                <a href="tel:{{ $pageSetting->phone_number ?? '+919833210963' }}" class="text-white">{{ $pageSetting->phone_number ?? '+91 9833210963' }}</a>
+                                <a href="tel:{{ $pageSetting->phone_number ?? '+919833210963' }}"
+                                    class="text-white">{{ $pageSetting->phone_number ?? '+91 9833210963' }}</a>
                             </div>
                             <div class="tf-currencies">
-                                <a href="mailto:{{ $pageSetting->email ?? 'hello@yourname.com' }}" class="text-white">{{ $pageSetting->email ?? 'hello@yourname.com' }}</a>
+                                <a href="mailto:{{ $pageSetting->email ?? 'hello@yourname.com' }}"
+                                    class="text-white">{{ $pageSetting->email ?? 'hello@yourname.com' }}</a>
                             </div>
                         </div>
                     </div>
@@ -144,12 +148,18 @@
                         </div>
                         <div class="col-xl-2 col-md-4 col-8 text-center">
                             <a href="index.html" class="logo-header">
-                                <img src="{{ $pageSetting && $pageSetting->site_logo ? Storage::url($pageSetting->site_logo) : asset('assets/images/logo/caspian_logo.webp') }}" alt="logo" class="logo">
+                                <img src="{{ $pageSetting && $pageSetting->site_logo ? Storage::url($pageSetting->site_logo) : asset('assets/images/logo/caspian_logo.webp') }}"
+                                    alt="logo" class="logo">
                             </a>
                         </div>
                         <div class="col-xl-5 col-md-4 col-2 d-flex justify-content-end align-items-center">
-                            <button id="navEnquiryBtn" class="nav-enquiry-btn" onclick="document.getElementById('enquiryModal').classList.add('active')">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                            <button id="navEnquiryBtn" class="nav-enquiry-btn"
+                                onclick="document.getElementById('enquiryModal').classList.add('active')">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                </svg>
                                 <span>Get a Quote</span>
                             </button>
                         </div>
@@ -183,7 +193,8 @@
                                                         <a href="#about" class="link footer-menu_item">About</a>
                                                     </li>
                                                     <li class="text-body-default">
-                                                        <a href="#collections" class="link footer-menu_item">Collections</a>
+                                                        <a href="#collections"
+                                                            class="link footer-menu_item">Collections</a>
                                                     </li>
                                                     <li class="text-body-default">
                                                         <a href="#products" class="link footer-menu_item">Products</a>
@@ -212,8 +223,7 @@
                                                             Policy</a>
                                                     </li>
                                                     <li class="text-body-default">
-                                                        <a href="term-of-use.html"
-                                                            class="link footer-menu_item">Terms
+                                                        <a href="term-of-use.html" class="link footer-menu_item">Terms
                                                             &amp; Conditions</a>
                                                     </li>
                                                 </ul>
@@ -221,8 +231,10 @@
                                         </div>
                                     </div>
                                     <div class="footer-phone-number">
-                                        <h4 class="text_white number">{{ $pageSetting->phone_number ?? '+61 (9) 567 8765 43' }}</h4>
-                                        <h4 class="text_white mail">{{ $pageSetting->email ?? 'hello@yourname.com' }}</h4>
+                                        <h4 class="text_white number">
+                                            {{ $pageSetting->phone_number ?? '+61 (9) 567 8765 43' }}</h4>
+                                        <h4 class="text_white mail">{{ $pageSetting->email ?? 'hello@yourname.com' }}
+                                        </h4>
                                     </div>
                                 </div>
                             </div>
@@ -231,9 +243,8 @@
                                     Stay in the loop with Weekly newsletters
                                 </h3>
                                 <div class="tf-collapse-content">
-                                    <form id="subscribe-form" action="#"
-                                        class="form-newsletter subscribe-form" method="post"
-                                        accept-charset="utf-8" data-mailchimp="true">
+                                    <form id="subscribe-form" action="#" class="form-newsletter subscribe-form"
+                                        method="post" accept-charset="utf-8" data-mailchimp="true">
                                         <div id="subscribe-content" class="subscribe-content">
                                             <fieldset class="email">
                                                 <input id="subscribe-email" type="email" name="email-form"
@@ -253,8 +264,8 @@
                                         <li><a href="#" class="social-facebook"><i
                                                     class="icon icon-facebook"></i></a>
                                         </li>
-                                        <li><a href="#" class="social-twiter"><i
-                                                    class="icon icon-x"></i></a></li>
+                                        <li><a href="#" class="social-twiter"><i class="icon icon-x"></i></a>
+                                        </li>
                                         <li><a href="#" class="social-instagram"><i
                                                     class="icon icon-instagram"></i></a>
                                         </li>
@@ -274,7 +285,8 @@
                         <div class="col-12">
                             <div class="footer-bottom-wrap">
                                 <div class="left">
-                                    <p class="text-body-default text_white">Copyright ©{{ date('Y') }} {{ $pageSetting->site_title ?? 'GearO' }}. All Rights
+                                    <p class="text-body-default text_white">Copyright ©{{ date('Y') }}
+                                        {{ $pageSetting->site_title ?? 'GearO' }}. All Rights
                                         Reserved.
                                     </p>
                                 </div>
@@ -362,8 +374,8 @@
                 <div class="mb-other-content">
                     <div class="group-icon">
                         <a href="wish-list.html" class="site-nav-icon">
-                            <svg class="icon" width="18" height="18" viewBox="0 0 24 24"
-                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M20.8401 4.60987C20.3294 4.09888 19.7229 3.69352 19.0555 3.41696C18.388 3.14039 17.6726 2.99805 16.9501 2.99805C16.2276 2.99805 15.5122 3.14039 14.8448 3.41696C14.1773 3.69352 13.5709 4.09888 13.0601 4.60987L12.0001 5.66987L10.9401 4.60987C9.90843 3.57818 8.50915 2.99858 7.05012 2.99858C5.59109 2.99858 4.19181 3.57818 3.16012 4.60987C2.12843 5.64156 1.54883 7.04084 1.54883 8.49987C1.54883 9.95891 2.12843 11.3582 3.16012 12.3899L4.22012 13.4499L12.0001 21.2299L19.7801 13.4499L20.8401 12.3899C21.3511 11.8791 21.7565 11.2727 22.033 10.6052C22.3096 9.93777 22.4519 9.22236 22.4519 8.49987C22.4519 7.77738 22.3096 7.06198 22.033 6.39452C21.7565 5.72706 21.3511 5.12063 20.8401 4.60987V4.60987Z"
                                     stroke="#181818" stroke-width="2" stroke-linecap="round"
@@ -372,8 +384,8 @@
                             Wishlist
                         </a>
                         <a href="search-result.html" class="site-nav-icon">
-                            <svg class="icon" width="18" height="18" viewBox="0 0 24 24"
-                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
                                     stroke="#181818" stroke-width="2" stroke-linecap="round"
@@ -384,8 +396,8 @@
                             Search
                         </a>
                         <a href="login.html" class="site-nav-icon">
-                            <svg class="icon" width="18" height="18" viewBox="0 0 24 24"
-                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21"
                                     stroke="#181818" stroke-width="2" stroke-linecap="round"
@@ -446,8 +458,7 @@
                 <div class="wd-facet-categories">
                     <div role="dialog" class="facet-title collapsed" data-bs-target="#forChair"
                         data-bs-toggle="collapse" aria-expanded="true" aria-controls="forChair">
-                        <img class="avt" src="{{ asset('assets/images/shop/product-1.jpg') }}"
-                            alt="avt">
+                        <img class="avt" src="{{ asset('assets/images/shop/product-1.jpg') }}" alt="avt">
                         <span class="title">Chair</span>
                         <span class="icon icon-down"></span>
                     </div>
@@ -485,8 +496,8 @@
                             <li>
                                 <a href="shop-default.html" class="item link"><img class="avt"
                                         src="{{ asset('assets/images/shop/popup-slidebar-item-2.jpg') }}"
-                                        alt="avt"><span
-                                        class="title-sub text-caption-1 text-secondary">Standing Desk</span></a>
+                                        alt="avt"><span class="title-sub text-caption-1 text-secondary">Standing
+                                        Desk</span></a>
                             </li>
                         </ul>
                     </div>
@@ -494,8 +505,7 @@
                 <div class="wd-facet-categories">
                     <div role="dialog" class="facet-title collapsed" data-bs-target="#forPhone"
                         data-bs-toggle="collapse" aria-expanded="true" aria-controls="forPhone">
-                        <img class="avt" src="{{ asset('assets/images/shop/product-5.jpg') }}"
-                            alt="avt">
+                        <img class="avt" src="{{ asset('assets/images/shop/product-5.jpg') }}" alt="avt">
                         <span class="title">Phone</span>
                         <span class="icon icon-down"></span>
                     </div>
@@ -517,8 +527,7 @@
                 <div class="wd-facet-categories">
                     <div role="dialog" class="facet-title collapsed" data-bs-target="#forLamp"
                         data-bs-toggle="collapse" aria-expanded="true" aria-controls="forLamp">
-                        <img class="avt" src="{{ asset('assets/images/gallery/gallery-3.jpg') }}"
-                            alt="avt">
+                        <img class="avt" src="{{ asset('assets/images/gallery/gallery-3.jpg') }}" alt="avt">
                         <span class="title">Lamp</span>
                         <span class="icon icon-down"></span>
                     </div>
@@ -526,14 +535,13 @@
                         <ul class="facet-body">
                             <li>
                                 <a href="shop-default.html" class="item link"><img class="avt"
-                                        src="{{ asset('assets/images/gallery/gallery-3.jpg') }}"
-                                        alt="avt"><span
+                                        src="{{ asset('assets/images/gallery/gallery-3.jpg') }}" alt="avt"><span
                                         class="title-sub text-caption-1 text-secondary">Reflection Lamp</span></a>
                             </li>
                             <li>
                                 <a href="shop-default.html" class="item link"><img class="avt"
-                                        src="{{ asset('assets/images/gallery/gallery-3.jpg') }}"
-                                        alt="avt"><span class="title-sub text-caption-1 text-secondary">Shore
+                                        src="{{ asset('assets/images/gallery/gallery-3.jpg') }}" alt="avt"><span
+                                        class="title-sub text-caption-1 text-secondary">Shore
                                         Lamp</span></a>
                             </li>
                         </ul>
@@ -562,8 +570,8 @@
                             xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
-                                stroke="#181818" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round"></path>
+                                stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            </path>
                             <path d="M21.35 21.0004L17 16.6504" stroke="#181818" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -590,8 +598,7 @@
                                         src="{{ asset('assets/images/shop/product-1.jpg') }}" alt="image-product">
                                     <img class="lazyload img-hover"
                                         data-src="{{ asset('assets/images/shop/product-1.1.jpg') }}"
-                                        src="{{ asset('assets/images/shop/product-1.1.jpg') }}"
-                                        alt="image-product">
+                                        src="{{ asset('assets/images/shop/product-1.1.jpg') }}" alt="image-product">
                                 </a>
                                 <div class="list-product-btn">
                                     <a href="javascript:void(0);" class="box-icon wishlist btn-icon-action">
@@ -646,8 +653,7 @@
                                         src="{{ asset('assets/images/shop/product-2.jpg') }}" alt="image-product">
                                     <img class="lazyload img-hover"
                                         data-src="{{ asset('assets/images/shop/product-2.1.jpg') }}"
-                                        src="{{ asset('assets/images/shop/product-2.1.jpg') }}"
-                                        alt="image-product">
+                                        src="{{ asset('assets/images/shop/product-2.1.jpg') }}" alt="image-product">
                                 </a>
                                 <div class="on-sale-wrap"><span class="on-sale-item">-25%</span>
                                 </div>
@@ -705,8 +711,7 @@
                                         src="{{ asset('assets/images/shop/product-3.jpg') }}" alt="image-product">
                                     <img class="lazyload img-hover"
                                         data-src="{{ asset('assets/images/shop/product-3.1.jpg') }}"
-                                        src="{{ asset('assets/images/shop/product-3.1.jpg') }}"
-                                        alt="image-product">
+                                        src="{{ asset('assets/images/shop/product-3.1.jpg') }}" alt="image-product">
                                 </a>
                                 <div class="on-sale-wrap"><span class="on-sale-item">-25%</span>
                                 </div>
@@ -763,8 +768,7 @@
                                         src="{{ asset('assets/images/shop/product-4.jpg') }}" alt="image-product">
                                     <img class="lazyload img-hover"
                                         data-src="{{ asset('assets/images/shop/product-4.1.jpg') }}"
-                                        src="{{ asset('assets/images/shop/product-4.1.jpg') }}"
-                                        alt="image-product">
+                                        src="{{ asset('assets/images/shop/product-4.1.jpg') }}" alt="image-product">
                                 </a>
                                 <div class="list-product-btn">
                                     <a href="javascript:void(0);" class="box-icon wishlist btn-icon-action">
@@ -826,8 +830,7 @@
                                         src="{{ asset('assets/images/shop/product-5.jpg') }}" alt="image-product">
                                     <img class="lazyload img-hover"
                                         data-src="{{ asset('assets/images/shop/product-5.1.jpg') }}"
-                                        src="{{ asset('assets/images/shop/product-5.1.jpg') }}"
-                                        alt="image-product">
+                                        src="{{ asset('assets/images/shop/product-5.1.jpg') }}" alt="image-product">
                                 </a>
                                 <div class="on-sale-wrap"><span class="on-sale-item">-25%</span>
                                 </div>
@@ -884,8 +887,7 @@
                                         src="{{ asset('assets/images/shop/product-6.jpg') }}" alt="image-product">
                                     <img class="lazyload img-hover"
                                         data-src="{{ asset('assets/images/shop/product-6.1.jpg') }}"
-                                        src="{{ asset('assets/images/shop/product-6.1.jpg') }}"
-                                        alt="image-product">
+                                        src="{{ asset('assets/images/shop/product-6.1.jpg') }}" alt="image-product">
                                 </a>
                                 <div class="list-product-btn">
                                     <a href="javascript:void(0);" class="box-icon wishlist btn-icon-action">
@@ -940,8 +942,7 @@
                                         src="{{ asset('assets/images/shop/product-7.jpg') }}" alt="image-product">
                                     <img class="lazyload img-hover"
                                         data-src="{{ asset('assets/images/shop/product-7.1.jpg') }}"
-                                        src="{{ asset('assets/images/shop/product-7.1.jpg') }}"
-                                        alt="image-product">
+                                        src="{{ asset('assets/images/shop/product-7.1.jpg') }}" alt="image-product">
                                 </a>
                                 <div class="on-sale-wrap"><span class="on-sale-item">-25%</span>
                                 </div>
@@ -998,8 +999,7 @@
                                         src="{{ asset('assets/images/shop/product-8.jpg') }}" alt="image-product">
                                     <img class="lazyload img-hover"
                                         data-src="{{ asset('assets/images/shop/product-8.1.jpg') }}"
-                                        src="{{ asset('assets/images/shop/product-8.1.jpg') }}"
-                                        alt="image-product">
+                                        src="{{ asset('assets/images/shop/product-8.1.jpg') }}" alt="image-product">
                                 </a>
                                 <div class="list-product-btn">
                                     <a href="javascript:void(0);" class="box-icon wishlist btn-icon-action">
@@ -1061,8 +1061,7 @@
                                         src="{{ asset('assets/images/shop/product-9.jpg') }}" alt="image-product">
                                     <img class="lazyload img-hover"
                                         data-src="{{ asset('assets/images/shop/product-9.1.jpg') }}"
-                                        src="{{ asset('assets/images/shop/product-9.1.jpg') }}"
-                                        alt="image-product">
+                                        src="{{ asset('assets/images/shop/product-9.1.jpg') }}" alt="image-product">
                                 </a>
                                 <div class="list-product-btn">
                                     <a href="javascript:void(0);" class="box-icon wishlist btn-icon-action">
@@ -2276,14 +2275,14 @@
     <script type="text/javascript" src="{{ asset('assets/js/main.js') }}"></script>
     <!-- Failsafe preloader dismiss: ensures spinner always hides even if other scripts error -->
     <script>
-        (function () {
+        (function() {
             function dismissPreloader() {
                 try {
                     var preload = document.querySelector('.preload');
                     if (preload) {
                         preload.style.transition = 'opacity 0.5s ease';
                         preload.style.opacity = '0';
-                        setTimeout(function () {
+                        setTimeout(function() {
                             preload.style.display = 'none';
                             if (preload.parentNode) preload.parentNode.removeChild(preload);
                         }, 500);
@@ -2304,23 +2303,40 @@
 
     <!-- ====== Floating Buttons ====== -->
     <!-- Left: Enquiry floating button -->
-    <button id="floatEnquiryBtn" class="float-btn float-enquiry-btn" onclick="document.getElementById('enquiryModal').classList.add('active')" aria-label="Open Enquiry Form">
-        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+    <button id="floatEnquiryBtn" class="float-btn float-enquiry-btn"
+        onclick="document.getElementById('enquiryModal').classList.add('active')" aria-label="Open Enquiry Form">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+        </svg>
         <span class="float-btn-label">Enquiry</span>
     </button>
 
     <!-- Right: WhatsApp floating button -->
-    <a id="floatWhatsappBtn" href="https://wa.me/919999999999" target="_blank" rel="noopener noreferrer" class="float-btn float-whatsapp-btn" aria-label="Chat on WhatsApp">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+    <a id="floatWhatsappBtn" href="https://wa.me/919999999999" target="_blank" rel="noopener noreferrer"
+        class="float-btn float-whatsapp-btn" aria-label="Chat on WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+            fill="currentColor">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z" />
+        </svg>
         <span class="float-btn-label">WhatsApp</span>
     </a>
 
     <!-- ====== Enquiry Popup Modal ====== -->
-    <div id="enquiryModal" class="enquiry-modal-overlay" onclick="if(event.target===this)this.classList.remove('active')">
+    <div id="enquiryModal" class="enquiry-modal-overlay"
+        onclick="if(event.target===this)this.classList.remove('active')">
         <div class="enquiry-modal-box">
             <!-- Close -->
-            <button class="enquiry-close-btn" onclick="document.getElementById('enquiryModal').classList.remove('active')" aria-label="Close">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            <button class="enquiry-close-btn"
+                onclick="document.getElementById('enquiryModal').classList.remove('active')" aria-label="Close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
             </button>
 
             <!-- Header -->
@@ -2332,244 +2348,313 @@
             <!-- Form -->
             <form id="enquiryForm" class="enquiry-form" action="{{ route('lead.store') }}" method="POST">
                 @csrf
-                <div class="enq-row">
-                    <div class="enq-group">
-                        <label class="enq-label" for="enq-full-name">FULL NAME</label>
-                        <input type="text" id="enq-full-name" name="name" class="enq-input" placeholder="John" required>
-                    </div>
+                <div class="enq-group">
+                    <label class="enq-label" for="enq-full-name">FULL NAME</label>
+                    <input type="text" id="enq-full-name" name="name" class="enq-input"
+                        placeholder="John" required>
                 </div>
                 <div class="enq-group">
                     <label class="enq-label" for="enq-email">EMAIL ADDRESS</label>
-                    <input type="email" id="enq-email" name="email" class="enq-input" placeholder="john@example.com" required>
+                    <input type="email" id="enq-email" name="email" class="enq-input"
+                        placeholder="john@example.com" required>
                 </div>
                 <div class="enq-group">
                     <label class="enq-label" for="enq-phone">PHONE NUMBER</label>
-                    <input type="tel" id="enq-phone" name="phone" class="enq-input" placeholder="+1 (212) 000-0000">
+                    <input type="tel" id="enq-phone" name="phone" class="enq-input"
+                        placeholder="+1 (212) 000-0000">
                 </div>
                 <div class="enq-group">
                     <label class="enq-label" for="enq-subject">SUBJECT</label>
-                    <input type="text" id="enq-subject" name="subject" class="enq-input" placeholder="Product Inquiry">
+                    <input type="text" id="enq-subject" name="subject" class="enq-input"
+                        placeholder="Product Inquiry">
                 </div>
                 <div class="enq-group">
                     <label class="enq-label" for="enq-message">MESSAGE</label>
-                    <textarea id="enq-message" name="message" class="enq-textarea" placeholder="Tell us about your requirements..." required></textarea>
+                    <textarea id="enq-message" name="message" class="enq-textarea" placeholder="Tell us about your requirements..."
+                        required></textarea>
                 </div>
-                <button type="submit" class="enq-submit-btn tf-btn btn-onsurface">SEND ENQUIRY &nbsp;&#8594;</button>
+                <button type="submit" class="enq-submit-btn tf-btn btn-onsurface">SEND ENQUIRY
+                    &nbsp;&#8594;</button>
             </form>
         </div>
     </div>
 
     <!-- ====== Floating + Modal CSS ====== -->
     <style>
-    /* ── Navbar Enquiry Button ── */
-    .nav-enquiry-btn {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        background-color: var(--Onsurface);
-        color: var(--White);
-        border: none;
-        border-radius: 3px;
-        padding: 11px 22px;
-        font-family: "Kumbh Sans", sans-serif;
-        font-size: 12px;
-        font-weight: 600;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        cursor: pointer;
-        transition: background-color 0.25s ease, transform 0.2s ease;
-        white-space: nowrap;
-    }
-    .nav-enquiry-btn:hover {
-        background-color: var(--Primary);
-        transform: translateY(-1px);
-    }
-    .nav-enquiry-btn svg { flex-shrink: 0; }
+        /* ── Navbar Enquiry Button ── */
+        .nav-enquiry-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background-color: var(--Onsurface);
+            color: var(--White);
+            border: none;
+            border-radius: 3px;
+            padding: 11px 22px;
+            font-family: "Kumbh Sans", sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background-color 0.25s ease, transform 0.2s ease;
+            white-space: nowrap;
+        }
 
-    /* ── Floating Buttons ── */
-    .float-btn {
-        position: fixed;
-        bottom: 28px;
-        display: inline-flex;
-        align-items: center;
-        gap: 10px;
-        padding: 13px 20px;
-        border-radius: 50px;
-        font-family: "Kumbh Sans", sans-serif;
-        font-size: 13px;
-        font-weight: 600;
-        letter-spacing: 0.06em;
-        cursor: pointer;
-        border: none;
-        text-decoration: none;
-        z-index: 9990;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.18);
-        transition: transform 0.25s ease, box-shadow 0.25s ease;
-    }
-    .float-btn:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 8px 28px rgba(0,0,0,0.22);
-    }
-    .float-enquiry-btn {
-        left: 28px;
-        bottom: 28px;
-        background-color: var(--Onsurface);
-        color: var(--White) !important;
-    }
-    .float-whatsapp-btn {
-        left: 28px;
-        bottom: 90px;
-        background-color: #25D366;
-        color: #fff !important;
-    }
-    .float-btn-label { line-height: 1; }
+        .nav-enquiry-btn:hover {
+            background-color: var(--Primary);
+            transform: translateY(-1px);
+        }
 
-    /* ── Popup Modal Overlay ── */
-    .enquiry-modal-overlay {
-        display: none;
-        position: fixed;
-        inset: 0;
-        background: rgba(24, 24, 24, 0.55);
-        backdrop-filter: blur(4px);
-        z-index: 99999;
-        align-items: center;
-        justify-content: center;
-        padding: 20px;
-    }
-    .enquiry-modal-overlay.active {
-        display: flex;
-        animation: enqFadeIn 0.28s ease;
-    }
-    @keyframes enqFadeIn {
-        from { opacity: 0; }
-        to   { opacity: 1; }
-    }
+        .nav-enquiry-btn svg {
+            flex-shrink: 0;
+        }
 
-    /* ── Modal Box ── */
-    .enquiry-modal-box {
-        position: relative;
-        background: var(--White);
-        border-radius: 6px;
-        width: 100%;
-        max-width: 560px;
-        max-height: 90vh;
-        overflow-y: auto;
-        padding: 48px 44px 44px;
-        box-shadow: 0 24px 64px rgba(0,0,0,0.18);
-        animation: enqSlideUp 0.3s ease;
-    }
-    @keyframes enqSlideUp {
-        from { transform: translateY(24px); opacity: 0; }
-        to   { transform: translateY(0);   opacity: 1; }
-    }
+        /* ── Floating Buttons ── */
+        .float-btn {
+            position: fixed;
+            bottom: 28px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 13px 20px;
+            border-radius: 50px;
+            font-family: "Kumbh Sans", sans-serif;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            cursor: pointer;
+            border: none;
+            text-decoration: none;
+            z-index: 9990;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.18);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
 
-    /* ── Close Button ── */
-    .enquiry-close-btn {
-        position: absolute;
-        top: 18px;
-        right: 20px;
-        background: none;
-        border: none;
-        cursor: pointer;
-        color: var(--Secondary);
-        padding: 4px;
-        display: flex;
-        align-items: center;
-        transition: color 0.2s ease;
-    }
-    .enquiry-close-btn:hover { color: var(--Onsurface); }
+        .float-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 28px rgba(0, 0, 0, 0.22);
+        }
 
-    /* ── Modal Header ── */
-    .enquiry-modal-header { margin-bottom: 32px; }
-    .enquiry-modal-title {
-        font-family: "Marcellus", sans-serif;
-        font-size: 26px;
-        line-height: 34px;
-        font-weight: 400;
-        color: var(--Onsurface);
-        margin-bottom: 8px;
-    }
-    .enquiry-modal-subtitle {
-        font-size: 14px;
-        line-height: 22px;
-        color: var(--Secondary);
-    }
+        .float-enquiry-btn {
+            left: 28px;
+            bottom: 28px;
+            background-color: var(--Onsurface);
+            color: var(--White) !important;
+        }
 
-    /* ── Form Layout ── */
-    .enquiry-form {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-    .enq-row {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 16px;
-    }
-    .enq-group {
-        display: flex;
-        flex-direction: column;
-        gap: 7px;
-    }
-    .enq-label {
-        font-family: "Kumbh Sans", sans-serif;
-        font-size: 10px;
-        font-weight: 600;
-        letter-spacing: 0.14em;
-        color: var(--Secondary2);
-        text-transform: uppercase;
-    }
-    .enq-input,
-    .enq-textarea {
-        font-family: "Marcellus", sans-serif;
-        font-size: 15px;
-        line-height: 24px;
-        color: var(--Onsurface);
-        background: var(--Surface);
-        border: 1px solid var(--line);
-        border-radius: 3px;
-        padding: 11px 14px;
-        width: 100%;
-        outline: none;
-        transition: border-color 0.25s ease, box-shadow 0.25s ease;
-        -webkit-appearance: none;
-        appearance: none;
-    }
-    .enq-input:focus,
-    .enq-textarea:focus {
-        border-color: var(--Primary);
-        box-shadow: 0 0 0 3px rgba(130,116,96,0.12);
-        background: var(--White);
-    }
-    .enq-textarea {
-        height: 110px;
-        resize: vertical;
-    }
-    .enq-submit-btn {
-        width: 100%;
-        justify-content: center;
-        font-family: "Kumbh Sans", sans-serif;
-        font-size: 13px;
-        font-weight: 600;
-        letter-spacing: 0.12em;
-        padding: 15px;
-        border-radius: 3px;
-        cursor: pointer;
-        margin-top: 4px;
-        transition: background-color 0.25s ease, transform 0.2s ease;
-    }
-    .enq-submit-btn:hover { transform: translateY(-1px); }
+        .float-whatsapp-btn {
+            left: 28px;
+            bottom: 90px;
+            background-color: #25D366;
+            color: #fff !important;
+        }
 
-    /* ── Responsive ── */
-    @media (max-width: 600px) {
-        .enquiry-modal-box { padding: 36px 20px 32px; }
-        .enq-row { grid-template-columns: 1fr; }
-        .float-btn-label { display: none; }
-        .float-btn { padding: 14px; border-radius: 50%; }
-        .float-enquiry-btn { left: 18px; bottom: 22px; }
-        .float-whatsapp-btn { left: 18px; bottom: 80px; }
-        .nav-enquiry-btn span { display: none; }
-    }
+        .float-btn-label {
+            line-height: 1;
+        }
+
+        /* ── Popup Modal Overlay ── */
+        .enquiry-modal-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(24, 24, 24, 0.55);
+            backdrop-filter: blur(4px);
+            z-index: 99999;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .enquiry-modal-overlay.active {
+            display: flex;
+            animation: enqFadeIn 0.28s ease;
+        }
+
+        @keyframes enqFadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* ── Modal Box ── */
+        .enquiry-modal-box {
+            position: relative;
+            background: var(--White);
+            border-radius: 6px;
+            width: 100%;
+            max-width: 560px;
+            max-height: 90vh;
+            overflow-y: auto;
+            padding: 48px 44px 44px;
+            box-shadow: 0 24px 64px rgba(0, 0, 0, 0.18);
+            animation: enqSlideUp 0.3s ease;
+        }
+
+        @keyframes enqSlideUp {
+            from {
+                transform: translateY(24px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* ── Close Button ── */
+        .enquiry-close-btn {
+            position: absolute;
+            top: 18px;
+            right: 20px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: var(--Secondary);
+            padding: 4px;
+            display: flex;
+            align-items: center;
+            transition: color 0.2s ease;
+        }
+
+        .enquiry-close-btn:hover {
+            color: var(--Onsurface);
+        }
+
+        /* ── Modal Header ── */
+        .enquiry-modal-header {
+            margin-bottom: 32px;
+        }
+
+        .enquiry-modal-title {
+            font-family: "Marcellus", sans-serif;
+            font-size: 26px;
+            line-height: 34px;
+            font-weight: 400;
+            color: var(--Onsurface);
+            margin-bottom: 8px;
+        }
+
+        .enquiry-modal-subtitle {
+            font-size: 14px;
+            line-height: 22px;
+            color: var(--Secondary);
+        }
+
+        /* ── Form Layout ── */
+        .enquiry-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .enq-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .enq-group {
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+        }
+
+        .enq-label {
+            font-family: "Kumbh Sans", sans-serif;
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 0.14em;
+            color: var(--Secondary2);
+            text-transform: uppercase;
+        }
+
+        .enq-input,
+        .enq-textarea {
+            font-family: "Marcellus", sans-serif;
+            font-size: 15px;
+            line-height: 24px;
+            color: var(--Onsurface);
+            background: var(--Surface);
+            border: 1px solid var(--line);
+            border-radius: 3px;
+            padding: 11px 14px;
+            width: 100%;
+            outline: none;
+            transition: border-color 0.25s ease, box-shadow 0.25s ease;
+            -webkit-appearance: none;
+            appearance: none;
+        }
+
+        .enq-input:focus,
+        .enq-textarea:focus {
+            border-color: var(--Primary);
+            box-shadow: 0 0 0 3px rgba(130, 116, 96, 0.12);
+            background: var(--White);
+        }
+
+        .enq-textarea {
+            height: 110px;
+            resize: vertical;
+        }
+
+        .enq-submit-btn {
+            width: 100%;
+            justify-content: center;
+            font-family: "Kumbh Sans", sans-serif;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.12em;
+            padding: 15px;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-top: 4px;
+            transition: background-color 0.25s ease, transform 0.2s ease;
+        }
+
+        .enq-submit-btn:hover {
+            transform: translateY(-1px);
+        }
+
+        /* ── Responsive ── */
+        @media (max-width: 600px) {
+            .enquiry-modal-box {
+                padding: 36px 20px 32px;
+            }
+
+            .enq-row {
+                grid-template-columns: 1fr;
+            }
+
+            .float-btn-label {
+                display: none;
+            }
+
+            .float-btn {
+                padding: 14px;
+                border-radius: 50%;
+            }
+
+            .float-enquiry-btn {
+                left: 18px;
+                bottom: 22px;
+            }
+
+            .float-whatsapp-btn {
+                left: 18px;
+                bottom: 80px;
+            }
+
+            .nav-enquiry-btn span {
+                display: none;
+            }
+        }
     </style>
 
 </body>
