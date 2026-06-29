@@ -52,8 +52,7 @@ class CategoriesTable
 
                 TextColumn::make('sort_order')
                     ->label('Order')
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
+                    ->sortable(),
 
                 TextColumn::make('created_at')
                     ->dateTime()
